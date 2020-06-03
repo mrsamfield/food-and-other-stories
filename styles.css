@@ -55,7 +55,15 @@ section.hero-content {
 
 section.hero-content div.hero-articles {
     background-color: blue;
-    width: 40vw;
+    width: 60vw;
+    max-width: 100%;
+    height: 100%;
+    margin-right: 10px;
+}
+
+section.hero-content div.instagram-feed {
+    background-color: blue;
+    width: 20vw;
     max-width: 100%;
     height: 100%;
 }
