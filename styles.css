@@ -32,6 +32,9 @@ div.logo-main-wrap {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 50vh;
+    width: 100vw;
+    background-color: coral;
 }
 
 div.logo-main-wrap h1 {
