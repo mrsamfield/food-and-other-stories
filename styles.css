@@ -103,6 +103,7 @@ div.hero-articles-col1 div.image-wrap {
     display: block;
     width: 100%;
     height: auto;
+    max-height: 60%;
     object-fit: cover;
     text-align: center;
     overflow: hidden;
