@@ -81,16 +81,16 @@ div.hero-articles div.hero-articles-col1 {
 div.hero-articles-col1 div.article-details {
     width: 100%;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     justify-content: space-evenly;
     align-items: center;
     background-color: chartreuse;
 }
 
 div.hero-articles-col1 div.image-wrap {
-    display: inline-block;
+    display: block;
     width: 100%;
-    height: auto;
+    height: fit-content;
     object-fit: cover;
     text-align: center;
 }
