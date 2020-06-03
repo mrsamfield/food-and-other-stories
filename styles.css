@@ -78,6 +78,10 @@ div.hero-articles div.hero-articles-col1 {
     align-items: center;
 }
 
+div.main-article {
+    width: 100%;
+}
+
 div.hero-articles-col1 div.article-details {
     width: 100%;
     height: 20px;
