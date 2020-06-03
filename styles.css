@@ -74,7 +74,6 @@ section.hero-content div.hero-articles {
 
 div.hero-articles div {
     background-color: brown;
-    border: 1px black solid;
 }
 
 div.hero-articles div.hero-articles-col1 {
@@ -96,7 +95,7 @@ div.hero-articles-col1 div.article-details {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: flex-start;
     background-color: chartreuse;
 }
 
