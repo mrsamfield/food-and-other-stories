@@ -38,5 +38,7 @@ div.logo-main-wrap {
 }
 
 div.logo-main-wrap h1 {
+    position: relative;
+    top: 100px;
     font-size: 64px;
 }
