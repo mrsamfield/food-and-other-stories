@@ -89,8 +89,10 @@ div.hero-articles-col1 div.article-details {
 
 div.hero-articles-col1 div.image-wrap {
     display: block;
-    width: 100%;
-    height: fit-content;
+    max-width:230px;
+    max-height:95px;
+    width: auto;
+    height: auto;
     object-fit: cover;
     text-align: center;
 }
