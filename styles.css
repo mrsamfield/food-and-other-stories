@@ -53,7 +53,7 @@ section.hero-content {
     justify-content: space-around;
 }
 
-section.hero-articles {
+section.hero-content div.hero-articles {
     background-color: blue;
     width: 20vw;
     height: 100%;
