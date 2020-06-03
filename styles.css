@@ -9,10 +9,6 @@ body {
     padding: 0;
 }
 
-img {
-    width: 1400px;
-}
-
 header.header-main {
     position: fixed;
     top: 0;
