@@ -1,4 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+/* neutral-#DED7C8 #E8B96F #D18E4B #E6956E #E06518 */
+
 body {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 16px;
     margin: 0;
     padding: 0;
 }
@@ -13,13 +19,14 @@ header.header-main {
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-}
-
-nav.nav-main {
-    background-color: blueviolet;
+    background-color: #DED7C8;
 }
 
 nav.nav-main a {
+    text-decoration: none;
+    color: black;
     margin: 5px;
 }
+
+
 
