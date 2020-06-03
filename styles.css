@@ -34,11 +34,21 @@ div.logo-main-wrap {
     align-items: center;
     height: 50vh;
     width: 100vw;
-    background-color: coral;
 }
 
 div.logo-main-wrap h1 {
     position: relative;
-    top: 100px;
+    top: 50px;
     font-size: 64px;
+}
+
+section.hero-content {
+    height: 90vh;
+    width: 100vw;
+    padding: 0 auto 0 auto;
+    background-color: aqua; 
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+
 }
