@@ -50,15 +50,13 @@ section.hero-content {
     background-color: aqua; 
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 section.hero-content div.hero-articles {
     background-color: blue;
-    width: 60vw;
-    min-width: 200px;
     height: 100%;
-    margin-right: 10px;
+    margin-right: 20px;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
@@ -69,6 +67,15 @@ div.hero-articles div {
     background-color: brown;
     height: 100%;
     width: 45%;
+    border: 1px black solid;
+}
+
+div.hero-articles div.hero-articles-col1 {
+    flex-basis: 2;
+}
+
+div.hero-articles div.hero-articles-col2 {
+    flex-basis: 1;
 }
 
 section.hero-content div.instagram-feed {
