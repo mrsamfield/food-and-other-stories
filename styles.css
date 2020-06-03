@@ -81,7 +81,7 @@ div.hero-articles div.hero-articles-col1 {
     flex-basis: 60%;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 
@@ -95,7 +95,7 @@ div.hero-articles-col1 div.article-details {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-evenly;
-    align-items: flex-start;
+    align-items: center;
     background-color: chartreuse;
 }
 
