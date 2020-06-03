@@ -66,11 +66,11 @@ section.hero-content div.hero-articles {
 
 div.hero-articles div {
     background-color: brown;
-    height: 100%;
     border: 1px black solid;
 }
 
 div.hero-articles div.hero-articles-col1 {
+    height: 100%;
     flex-basis: 60%;
     display: flex;
     flex-flow: column nowrap;
@@ -102,6 +102,7 @@ div.hero-articles-col1 div.image-wrap {
 }
 
 div.hero-articles div.hero-articles-col2 {
+    height: 100%;
     flex-basis: 30%;
 }
 
