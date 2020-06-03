@@ -80,6 +80,7 @@ div.hero-articles div.hero-articles-col1 {
 
 div.hero-articles-col1 div.article-details {
     width: 100%;
+    height: 20px;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-evenly;
