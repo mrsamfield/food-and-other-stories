@@ -109,6 +109,10 @@ div.hero-articles-col1 div.image-wrap {
     overflow: hidden;
 }
 
+div.image-wrap img {
+    width: 100%;
+}
+
 div.hero-articles div.hero-articles-col2 {
     height: 100%;
     flex-basis: 30%;
