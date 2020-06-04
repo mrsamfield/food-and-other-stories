@@ -125,16 +125,16 @@ div.hero-articles-col2 div.secondary-article {
 }
 
 div.secondary-article div.image-wrap {
-    max-height: 25%;
+    max-height: 25vh;
 }
 
 div.secondary-article div.article-details {
-    font-size: 13;
+    font-size: 8px;
     flex-flow: row wrap;
 }
 
 div.secondary-article div.preview-text-wrap {
-    font-size: 13;
+    font-size: 8px;
     padding: 5px 0 5px 0;
     max-height: 50px;
     overflow: hidden;
