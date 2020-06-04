@@ -55,14 +55,12 @@ section.hero-content {
     height: 90vh;
     width: 100vw;
     padding: 0 auto 0 auto;
-    background-color: aqua; 
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
 }
 
 section.hero-content div.hero-articles {
-    background-color: blue;
     height: 100%;
     width: 60vw;
     margin-right: 20px;
@@ -95,7 +93,6 @@ div.article-details {
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
-    background-color: chartreuse;
 }
 
 div.image-wrap {
