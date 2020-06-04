@@ -46,4 +46,5 @@ const getUrls = function () {
 }
 
 
-getImages().getUrls()
+getImages()
+getUrls()
