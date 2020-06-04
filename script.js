@@ -23,7 +23,7 @@ const accessToken = 'IGQVJXSmxVME9JUWpDS2Q2YjZABQ1hnaDFsNUJlOFY4cEVKZAGYybTEwRm5
 const request1 = `${startpoint}media?fields=${fields}&access_token=${accessToken}`
 let posts = {}
 const numberOfPosts = 12
-const instagramTiles = document.querySelectorAll('div.instagram-grid div.grid-item')
+const instagramTiles = document.querySelectorAll('div.grid-item')
 
 console.log(instagramTiles)
 
