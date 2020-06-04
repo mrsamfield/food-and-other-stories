@@ -47,15 +47,5 @@ const loadPosts = function (posts) {
   console.log(posts)
   return posts
 }
-// const getUrls = function () {
-//     feed.forEach(post => {
-//         fetch(`https://graph.instagram.com/${post.id}?fields=id,media_type,media_url,username,timestamp&access_token=${accessToken}`)
-//           .then(response => response.json())
-//           .then(data => {
-//               console.log(data)
-//           })
-//     })
-// }
-
 
 getPosts().then(posts => loadPosts(posts))

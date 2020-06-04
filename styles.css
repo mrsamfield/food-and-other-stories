@@ -62,7 +62,7 @@ section.hero-content {
 
 section.hero-content div.hero-articles {
     height: 100%;
-    width: 60vw;
+    width: 70vw;
     margin-right: 20px;
     display: flex;
     flex-flow: row wrap;
@@ -72,7 +72,7 @@ section.hero-content div.hero-articles {
 
 div.hero-articles div.hero-articles-col1 {
     height: 100%;
-    flex-basis: 60%;
+    flex-basis: 50%;
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
@@ -120,7 +120,7 @@ div.image-wrap img {
 
 div.hero-articles div.hero-articles-col2 {
     height: 100%;
-    flex-basis: 30%;
+    flex-basis: 40%;
 }
 
 div.hero-articles-col2 div.secondary-article {
