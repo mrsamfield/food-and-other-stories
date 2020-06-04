@@ -27,11 +27,9 @@ const getImages = function () {
     fetch(request1)
       .then(response => response.json())
       .then(data => {
-        for (let i = 0; i < data.length; i++) {
-            console.log(data[i])
-        }
+        console.log(data)
       })
-      return feed
+      return data
 }
 
 // const getUrls = function () {
