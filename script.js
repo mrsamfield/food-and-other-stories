@@ -40,7 +40,7 @@ const loadPosts = function (posts) {
     return fetch(`https://graph.instagram.com/${post.id}?fields=id,media_type,media_url,username,timestamp&access_token=${accessToken}`)
              .then(response => response.json())
              .then(data => {
-               post.url = data[media_url]
+               post.url = data['media_url']
             })
   })
 
