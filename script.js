@@ -42,7 +42,7 @@ const loadPosts = function (posts) {
              .then(data => {
                post.url = data[media_url]
             })
-  }
+  })
 
   console.log(posts)
   return posts
