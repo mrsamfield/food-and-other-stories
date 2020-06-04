@@ -126,12 +126,6 @@ div.secondary-article div.image-wrap {
     max-height: 25vh;
 }
 
-div.secondary-article div.preview-text-wrap {
-    padding: 5px 0 5px 0;
-    max-height: 50px;
-    overflow: hidden;
-}
-
 section.hero-content div.instagram-feed {
     background-color: blue;
     width: 20vw;
