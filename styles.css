@@ -142,14 +142,14 @@ section.hero-content div.instagram-feed {
     height: 100%;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: center;
-    align-items: flex-start;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 /* instagram grid */
 div.instagram-grid {
     display: grid;
-    grid-column-gap: 10px;
+    grid-gap: 10px;
     grid-template-columns: auto auto auto;
 }
 
