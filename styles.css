@@ -92,7 +92,7 @@ div.main-article {
 
 div.hero-articles-col1 div.article-details {
     width: 100%;
-    padding: 5px;
+    padding: 10px 0 0 0;
     height: 30px;
     display: flex;
     flex-flow: row nowrap;
@@ -111,8 +111,8 @@ div.hero-articles-col1 div.image-wrap {
     overflow: hidden;
 }
 
-div.hero-articles-col1 div.preview-text {
-    padding: 5px;
+div.hero-articles-col1 div.preview-text-wrap {
+    padding: 10px 0 10px 0;
 }
 
 div.image-wrap img {
