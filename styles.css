@@ -90,7 +90,7 @@ div.article-details {
     width: 100%;
     padding: 10px 0 0 0;
     height: fit-content;
-    line-height: 0.75em;
+    line-height: 0.5em;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
