@@ -156,5 +156,6 @@ div.instagram-grid {
 div.instagram-grid div.grid-item {
     background-color: cornsilk;
     height: 90px;
-    width: 90px;
+    width: 30%;
+    min-width: 50px;
 }
