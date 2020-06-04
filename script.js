@@ -28,6 +28,7 @@ const getPosts = function () {
              .then(response => response.json())
             .then(data => {
               const posts = data
+              console.log(posts)
               return posts
             })
 }
