@@ -23,18 +23,24 @@ const accessToken = 'IGQVJXSmxVME9JUWpDS2Q2YjZABQ1hnaDFsNUJlOFY4cEVKZAGYybTEwRm5
 const request1 = `${startpoint}media?fields=${fields}&access_token=${accessToken}`
 const feed = {}
 
-const getImages = function () {
-    fetch(request1)
+const getPosts = function () {
+    return fetch(request1)
+             .then(response => response.json())
+            .then(data => {
+              const posts = data
+              return posts
+            })
+}
+
+const loadPosts = function (posts) {
+  posts.forEach(post => {
+    fetch(`https://graph.instagram.com/${post.id}?fields=id,media_type,media_url,username,timestamp&access_token=${accessToken}`)
       .then(response => response.json())
       .then(data => {
         console.log(data)
-        return data
       })
-      data.forEach(post => {
-          console.log(post)
-      });
+  })
 }
-
 // const getUrls = function () {
 //     feed.forEach(post => {
 //         fetch(`https://graph.instagram.com/${post.id}?fields=id,media_type,media_url,username,timestamp&access_token=${accessToken}`)
