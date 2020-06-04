@@ -90,7 +90,7 @@ div.main-article {
     height: 100%;
 }
 
-div.hero-articles-col1 div.article-details {
+div.article-details {
     width: 100%;
     padding: 10px 0 0 0;
     height: 30px;
@@ -101,7 +101,7 @@ div.hero-articles-col1 div.article-details {
     background-color: chartreuse;
 }
 
-div.hero-articles-col1 div.image-wrap {
+div.image-wrap {
     display: block;
     width: 100%;
     height: auto;
@@ -111,7 +111,7 @@ div.hero-articles-col1 div.image-wrap {
     overflow: hidden;
 }
 
-div.hero-articles-col1 div.preview-text-wrap {
+div.preview-text-wrap {
     padding: 10px 0 10px 0;
 }
 
@@ -125,11 +125,11 @@ div.hero-articles div.hero-articles-col2 {
 }
 
 div.hero-articles-col2 div.image-wrap {
-    max-height: 20vh;
-    overflow: hidden;
+    max-height: 30vh;
 }
 
 div.hero-articles-col2 div.preview-text-wrap {
+    padding: 5px 0 5px 0;
     max-height: 50px;
     overflow: hidden;
 }
