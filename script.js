@@ -20,7 +20,7 @@
 const startpoint = 'https://graph.instagram.com/me/'
 const fields = 'id,caption'
 const accessToken = 'IGQVJXSmxVME9JUWpDS2Q2YjZABQ1hnaDFsNUJlOFY4cEVKZAGYybTEwRm5kQm5FUVNsaE5Sc3N5ZA1VaX0lVTWh5S05vc0hTUngxWWZAORXdOTU5tVHRfZAjFpX0VGOHF4M2dsckgzUEln'
-const request1 = `${startpoint}/me/media?fields=${fields}&access_token=${accessToken}`
+const request1 = `${startpoint}media?fields=${fields}&access_token=${accessToken}`
 const feed = {}
 
 const getImages = function () {
