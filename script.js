@@ -24,6 +24,7 @@ const request1 = `${startpoint}media?fields=${fields}&access_token=${accessToken
 let posts = {}
 const numberOfPosts = 12
 const instagramTiles = document.querySelectorAll('div.grid-item')
+const instagramFeed = false
 
 console.log(instagramTiles)
 
@@ -62,4 +63,6 @@ const addPosts = function (posts) {
     })
 }
 
-getPosts().then(posts => loadPosts(posts)).then(posts => addPosts(posts))
+if(instagramFeed == true) {
+  getPosts().then(posts => loadPosts(posts)).then(posts => addPosts(posts))
+}
