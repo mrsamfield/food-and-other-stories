@@ -72,10 +72,6 @@ section.hero-content div.hero-articles {
     align-items: flex-start;
 }
 
-div.hero-articles div {
-    background-color: brown;
-}
-
 div.hero-articles div.hero-articles-col1 {
     height: 100%;
     flex-basis: 60%;
@@ -124,15 +120,21 @@ div.hero-articles div.hero-articles-col2 {
     flex-basis: 30%;
 }
 
-div.hero-articles-col2 div.image-wrap {
-    max-height: 30vh;
+div.hero-articles-col2 div.secondary-article {
+    max-height: 50%;
 }
 
-div.hero-articles-col2 div.article-details {
+div.secondary-article div.image-wrap {
+    max-height: 50%;
+}
+
+div.secondary-article div.article-details {
+    font-size: 13;
     flex-flow: row wrap;
 }
 
-div.hero-articles-col2 div.preview-text-wrap {
+div.secondary-article div.preview-text-wrap {
+    font-size: 13;
     padding: 5px 0 5px 0;
     max-height: 50px;
     overflow: hidden;
