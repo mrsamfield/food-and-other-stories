@@ -86,7 +86,8 @@ div.hero-articles div.hero-articles-col1 {
 }
 
 div.main-article {
-    width: 100%;
+    width: 90%;
+    height: 90%;
     padding: 5%;
 }
 
