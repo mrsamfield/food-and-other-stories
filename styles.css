@@ -124,6 +124,15 @@ div.hero-articles div.hero-articles-col2 {
     flex-basis: 30%;
 }
 
+div.hero-articles-col2 div.image-wrap {
+    max-height: 20%;
+}
+
+div.hero-articles-col2 div.preview-text-wrap {
+    max-height: 50px;
+    overflow: hidden;
+}
+
 section.hero-content div.instagram-feed {
     background-color: blue;
     width: 20vw;
