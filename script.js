@@ -27,24 +27,23 @@ const getImages = function () {
     fetch(request1)
       .then(response => response.json())
       .then(data => {
-        console.log(data)
-        data.forEach(post => {
-          feed.push(post)
-        });
+        for (let i = 0; i < data.length; i++) {
+            console.log(data[i])
+        }
       })
       return feed
 }
 
-const getUrls = function () {
-    feed.forEach(post => {
-        fetch(`https://graph.instagram.com/${post.id}?fields=id,media_type,media_url,username,timestamp&access_token=${accessToken}`)
-          .then(response => response.json())
-          .then(data => {
-              console.log(data)
-          })
-    })
-}
+// const getUrls = function () {
+//     feed.forEach(post => {
+//         fetch(`https://graph.instagram.com/${post.id}?fields=id,media_type,media_url,username,timestamp&access_token=${accessToken}`)
+//           .then(response => response.json())
+//           .then(data => {
+//               console.log(data)
+//           })
+//     })
+// }
 
 
 getImages()
-getUrls()
+// getUrls()
