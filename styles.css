@@ -128,6 +128,10 @@ div.hero-articles-col2 div.image-wrap {
     max-height: 30vh;
 }
 
+div.hero-articles-col2 div.article-details {
+    flex-flow: row wrap;
+}
+
 div.hero-articles-col2 div.preview-text-wrap {
     padding: 5px 0 5px 0;
     max-height: 50px;
