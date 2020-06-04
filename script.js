@@ -24,6 +24,7 @@ const request1 = `${startpoint}media?fields=${fields}&access_token=${accessToken
 let posts = {}
 const numberOfPosts = 12
 const instagramTiles = document.querySelectorAll('div.instagram-grid div.grid-item')
+console.log(instagramTiles)
 
 // gets a list of posts
 const getPosts = function () {
@@ -49,6 +50,7 @@ const loadPosts = function (posts) {
   return posts
 }
 
+//adds post html to page
 const addPosts = function (posts) {
     posts.forEach((post, i) => {
       if (i <= numberOfPosts) {
