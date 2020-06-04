@@ -52,5 +52,4 @@ const loadPosts = function (posts) {
 // }
 
 
-getImages()
-// getUrls()
+getPosts().then(posts => loadPosts(posts))
