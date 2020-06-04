@@ -121,6 +121,7 @@ div.image-wrap img {
 div.hero-articles div.hero-articles-col2 {
     height: 100%;
     flex-basis: 40%;
+    padding-top: 15px;
 }
 
 div.hero-articles-col2 div.secondary-article {
@@ -128,7 +129,7 @@ div.hero-articles-col2 div.secondary-article {
 }
 
 div.secondary-article div.image-wrap {
-    max-height: 25vh;
+    max-height: 30vh;
 }
 
 div.secondary-article div.article-details {
