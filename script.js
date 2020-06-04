@@ -28,7 +28,7 @@ const getPosts = function () {
     return fetch(request1)
              .then(response => response.json())
             .then(data => {
-              posts = data[data]
+              posts = data['data']
               console.log(posts)
               return posts
             })
