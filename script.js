@@ -34,15 +34,15 @@ const getPosts = function () {
             })
 }
 
-// const loadPosts = function (posts) {
-//   posts.forEach(post => {
-//     fetch(`https://graph.instagram.com/${post.id}?fields=id,media_type,media_url,username,timestamp&access_token=${accessToken}`)
-//       .then(response => response.json())
-//       .then(data => {
-//         console.log(data)
-//       })
-//   })
-// }
+const loadPosts = function (posts) {
+  posts.forEach(post => {
+    fetch(`https://graph.instagram.com/${post.id}?fields=id,media_type,media_url,username,timestamp&access_token=${accessToken}`)
+      .then(response => response.json())
+      .then(data => {
+        console.log(data)
+      })
+  })
+}
 // const getUrls = function () {
 //     feed.forEach(post => {
 //         fetch(`https://graph.instagram.com/${post.id}?fields=id,media_type,media_url,username,timestamp&access_token=${accessToken}`)
@@ -54,4 +54,4 @@ const getPosts = function () {
 // }
 
 
-getPosts()
+getPosts().then(posts => loadPosts(posts))
