@@ -95,6 +95,11 @@ div.article-details {
     align-items: center;
 }
 
+div.article-details p {
+    font-style: italic;
+    font-size: 8px;
+}
+
 div.image-wrap {
     display: block;
     width: 100%;
