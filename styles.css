@@ -126,6 +126,7 @@ div.hero-articles div.hero-articles-col2 {
 
 div.hero-articles-col2 div.image-wrap {
     max-height: 20vh;
+    overflow: hidden;
 }
 
 div.hero-articles-col2 div.preview-text-wrap {
