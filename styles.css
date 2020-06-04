@@ -141,6 +141,7 @@ section.hero-content div.instagram-feed {
     min-width: 200px;
     height: 100%;
     display: flex;
+    flex-flow: column nowrap;
     justify-content: center;
     align-items: flex-start;
 }
@@ -148,12 +149,12 @@ section.hero-content div.instagram-feed {
 /* instagram grid */
 div.instagram-grid {
     display: grid;
-    grid-column-gap: 0;
-    grid-template-columns: 1 1 1;
+    grid-column-gap: 10px;
+    grid-template-columns: auto auto auto;
 }
 
 div.instagram-grid div.grid-item {
     background-color: cornsilk;
-    height: 50px;
-    width: 50px;
+    height: 70px;
+    width: 70px;
 }
