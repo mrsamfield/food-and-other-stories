@@ -22,6 +22,8 @@ const fields = 'id,caption'
 const accessToken = 'IGQVJXSmxVME9JUWpDS2Q2YjZABQ1hnaDFsNUJlOFY4cEVKZAGYybTEwRm5kQm5FUVNsaE5Sc3N5ZA1VaX0lVTWh5S05vc0hTUngxWWZAORXdOTU5tVHRfZAjFpX0VGOHF4M2dsckgzUEln'
 const request1 = `${startpoint}media?fields=${fields}&access_token=${accessToken}`
 let posts = {}
+const numberOfPosts = 12
+const instagramTiles = document.querySelectorAll('div.instagram-grid div.grid-item')
 
 // gets a list of posts
 const getPosts = function () {
@@ -29,7 +31,6 @@ const getPosts = function () {
              .then(response => response.json())
             .then(data => {
               posts = data['data']
-              console.log(posts)
               return posts
             })
 }
@@ -48,4 +49,14 @@ const loadPosts = function (posts) {
   return posts
 }
 
-getPosts().then(posts => loadPosts(posts))
+const addPosts = function (posts) {
+    posts.forEach((post, i) => {
+      if (i <= numberOfPosts) {
+        instagramTiles[i].innerHTML = `
+        <img src=${post.url}>
+        ` 
+      }
+    })
+}
+
+getPosts().then(posts => loadPosts(posts)).then(posts => addPosts(posts))
