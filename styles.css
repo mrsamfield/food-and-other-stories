@@ -131,6 +131,10 @@ div.secondary-article div.image-wrap {
     max-height: 25vh;
 }
 
+div.secondary-article div.article-details {
+    padding: 10px 0 15px 0;
+}
+
 section.hero-content div.instagram-feed {
     background-color: blue;
     width: 20vw;
