@@ -92,10 +92,11 @@ div.main-article {
 
 div.hero-articles-col1 div.article-details {
     width: 100%;
+    padding: 5px;
     height: 30px;
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     background-color: chartreuse;
 }
@@ -108,6 +109,10 @@ div.hero-articles-col1 div.image-wrap {
     object-fit: cover;
     text-align: center;
     overflow: hidden;
+}
+
+div.hero-articles-col1 div.preview-text {
+    padding: 5px;
 }
 
 div.image-wrap img {
