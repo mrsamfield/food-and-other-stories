@@ -28,8 +28,11 @@ const getImages = function () {
       .then(response => response.json())
       .then(data => {
         console.log(data)
+        return data
       })
-      return data
+      data.forEach(post => {
+          console.log(post)
+      });
 }
 
 // const getUrls = function () {
