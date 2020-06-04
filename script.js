@@ -30,3 +30,5 @@ const getImages = function () {
         console.log(data)
       })
 }
+
+getImages()
