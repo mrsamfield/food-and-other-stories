@@ -56,6 +56,7 @@ const loadPosts = function (posts) {
 const addPosts = function (posts) {
     posts.forEach((post, i) => {
       if (i <= numberOfPosts) {
+        console.log(instagramTiles[i])
         instagramTiles[i].innerHTML = `
         <img src=${post.url}>
         ` 
