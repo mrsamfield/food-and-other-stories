@@ -106,11 +106,11 @@ div.hero-articles div.hero-articles-col2 {
 }
 
 div.secondary-article {
-    height: 50%;
+    height: 40%;
 }
 
 div.secondary-article div.image-wrap {
-    height: 80%;
+    height: 95%;
     max-width: 100%;
     max-height: fit-content;
     text-align: left;
