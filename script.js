@@ -24,7 +24,7 @@ const request1 = `${startpoint}media?fields=${fields}&access_token=${accessToken
 let posts = {}
 const numberOfPosts = 12
 const instagramTiles = document.querySelectorAll('div.grid-item')
-const instagramFeed = true
+const instagramFeed = false
 
 console.log(instagramTiles)
 
