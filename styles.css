@@ -113,6 +113,10 @@ div.secondary-article.portrait {
     width: 70%;
 }
 
+div.secondary-article.landscape {
+    height: 80%;
+}
+
 div.secondary-article div.image-wrap {
     height: 95%;
     width: 100%;
