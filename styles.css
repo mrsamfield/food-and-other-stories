@@ -86,22 +86,6 @@ div.main-article {
     height: 100%;
 }
 
-div.article-details {
-    width: 100%;
-    padding: 10px 0 0 0;
-    height: fit-content;
-    line-height: 0.5em;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: center;
-}
-
-div.article-details p {
-    font-style: italic;
-    font-size: 10px;
-}
-
 div.image-wrap {
     display: block;
     width: 100%;
@@ -109,10 +93,6 @@ div.image-wrap {
     object-fit: contain;
     text-align: center;
     overflow: hidden;
-}
-
-div.preview-text-wrap {
-    margin: 10px 0 10px 0;
 }
 
 div.image-wrap img {
@@ -134,10 +114,6 @@ div.secondary-article div.image-wrap {
     max-width: 100%;
     max-height: fit-content;
     text-align: left;
-}
-
-div.secondary-article div.article-details {
-    padding: 10px 0 15px 0;
 }
 
 section.hero-content div.instagram-feed {
