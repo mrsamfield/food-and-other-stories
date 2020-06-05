@@ -126,12 +126,16 @@ div.hero-articles div.hero-articles-col2 {
 }
 
 div.secondary-article {
-    height: 40%;
+    height: 50%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
 }
 
 div.secondary-article div.image-wrap {
-    height: 30vh;
+    height: 80%;
     width: auto;
+    max-height: fit-content;
 }
 
 div.secondary-article div.article-details {
