@@ -109,6 +109,10 @@ div.secondary-article {
     height: 40%;
 }
 
+div.secondary-article.portrait {
+    width: 70%;
+}
+
 div.secondary-article div.image-wrap {
     height: 95%;
     width: 100%;
