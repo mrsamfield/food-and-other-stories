@@ -57,7 +57,7 @@ const loadPosts = function (posts) {
 const addPosts = function (posts) {
   instagramTiles.forEach((tile, i) => {
     console.log(i, "  ", posts[i])
-    tile.innerHTML = `<img src="${posts[i]}">`
+    tile.innerHTML = `<img src="${posts[i].url}">`
   })
     // posts.forEach((post, i) => {
     //   if (i < numberOfPosts) {
