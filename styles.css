@@ -78,7 +78,6 @@ div.hero-articles div.hero-articles-col1 {
     flex-flow: column nowrap;
     justify-content: flex-start;
     align-items: center;
-    border-right: 1px black solid;
 }
 
 div.main-article {
@@ -104,7 +103,7 @@ div.hero-articles div.hero-articles-col2 {
     width: 40%;
     padding-top: 30px;
     padding-left: 15px;
-    padding: 30px 0 0 15px;
+    padding: 30px 0 0 0;
 }
 
 div.secondary-article {
