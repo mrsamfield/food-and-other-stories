@@ -17,6 +17,10 @@ h1 {
     display: inline;
 }
 
+img {
+    border-radius: 2px;
+}
+
 header.header-main {
     position: fixed;
     top: 0;
