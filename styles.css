@@ -137,4 +137,11 @@ div.instagram-grid div.grid-item {
     height: 6vw;
     width: 6vw;
     min-width: 50px;
+    text-align: center;
+    overflow: hidden;
+}
+
+div.grid-item img {
+    min-height: 100%;
+    width: 100%;
 }
