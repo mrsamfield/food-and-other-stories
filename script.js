@@ -63,6 +63,6 @@ const addPosts = function (posts) {
     })
 }
 
-if(instagramFeed == true) {
+if(instagramFeed === true) {
   getPosts().then(posts => loadPosts(posts)).then(posts => addPosts(posts))
 }
