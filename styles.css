@@ -159,8 +159,20 @@ div.grid-item img {
     object-fit: cover;
 }
 
-@media only screen and (max-width: 768px) {
 
+    /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+   
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    
     section.hero-content {
         flex-flow: column nowrap;
         align-items: center;
@@ -173,6 +185,5 @@ div.grid-item img {
         align-items: center; 
 
     }
-
 
 }
