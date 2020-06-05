@@ -115,6 +115,12 @@ div.secondary-article div.image-wrap {
     text-align: left;
 }
 
+div.secondary-article div.image-wrap img {
+    height: 100%;
+    max-width: 60%;
+    object-fit: cover;
+}
+
 section.hero-content div.instagram-feed {
     width: 20vw;
     min-width: 200px;
