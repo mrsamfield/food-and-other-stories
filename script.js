@@ -55,14 +55,18 @@ const loadPosts = function (posts) {
 
 //adds post html to page
 const addPosts = function (posts) {
-    posts.forEach((post, i) => {
-      if (i < numberOfPosts) {
-        console.log(instagramTiles[i])
-        instagramTiles[i].innerHTML = `
-        <img src=${posts[i].url}>
-        ` 
-      }
-    })
+  instagramTiles.forEach((tile, i) => {
+    console.log(i, "  ", posts[i])
+    tile.innerHTML = `<img src="${posts[i]}">`
+  })
+    // posts.forEach((post, i) => {
+    //   if (i < numberOfPosts) {
+    //     console.log(instagramTiles[i])
+    //     instagramTiles[i].innerHTML = `
+    //     <img src=${posts[i].url}>
+    //     ` 
+    //   }
+    // })
 }
 
 if(instagramFeed === true) {
