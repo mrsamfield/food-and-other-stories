@@ -72,11 +72,12 @@ section.hero-content div.hero-articles {
 
 div.hero-articles div.hero-articles-col1 {
     height: 100%;
-    width: 50%;
+    width: 40%;
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
     align-items: center;
+    border-left: 1px black solid;
 }
 
 div.main-article {
@@ -103,7 +104,7 @@ div.article-details p {
 div.image-wrap {
     display: block;
     width: 100%;
-    height: auto;
+    max-height: 60%;
     object-fit: contain;
     text-align: center;
     overflow: hidden;
@@ -119,12 +120,12 @@ div.image-wrap img {
 
 div.hero-articles div.hero-articles-col2 {
     height: 100%;
-    width: 50%;
+    width: 40%;
     padding-top: 15px;
 }
 
 div.secondary-article div.image-wrap {
-    height: 30vh;
+    max-height: 50%;
 }
 
 div.secondary-article div.article-details {
