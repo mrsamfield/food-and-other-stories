@@ -28,7 +28,7 @@ header.header-main {
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-    background-color: #DED7C8;
+    background-color: rgb(250, 247, 242);
 }
 
 nav.nav-main a {
