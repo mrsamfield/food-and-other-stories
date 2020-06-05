@@ -115,9 +115,9 @@ div.secondary-article div.image-wrap {
     text-align: left;
 }
 
-div.secondary-article div.image-wrap img {
-    height: 100%;
-    max-width: 60%;
+.limit-image {
+    min-height: 100%;
+    max-width: 15vw;
     object-fit: cover;
 }
 
