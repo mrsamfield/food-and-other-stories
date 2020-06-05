@@ -34,6 +34,7 @@ const getPosts = function () {
              .then(response => response.json())
             .then(data => {
               posts = data['data']
+              posts = posts.slice(0, numberOfPosts)
               return posts
             })
 }
