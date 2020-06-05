@@ -106,7 +106,7 @@ div.hero-articles div.hero-articles-col2 {
 }
 
 div.secondary-article {
-    height: 35%;
+    height: 42%;
 }
 
 div.secondary-article.portrait {
@@ -114,7 +114,7 @@ div.secondary-article.portrait {
 }
 
 div.secondary-article.landscape {
-    height: 80%;
+    height: 35%;
 }
 
 div.secondary-article div.image-wrap {
