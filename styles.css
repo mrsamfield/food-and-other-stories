@@ -73,7 +73,7 @@ section.hero-content div.hero-articles {
 div.hero-articles div.hero-articles-col1 {
     height: 100%;
     width: 50%;
-    padding-right: 20%;
+    padding-right: 15px;
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
