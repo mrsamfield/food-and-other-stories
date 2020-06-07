@@ -153,6 +153,11 @@ div.instagram-grid div.grid-item {
     overflow: hidden;
 }
 
+div.instagram-grid div.grid-item:hover {
+    height: 10vw;
+    width: 10vw;
+}
+
 div.grid-item img {
     height: 100%;
     width: 100%;

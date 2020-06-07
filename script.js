@@ -28,7 +28,7 @@ const getEdges = function() {
 const addPosts = function (edges) {
   instagramTiles.forEach((tile, i) => {
     tile.innerHTML = `
-    <a href="${account}">
+    <a href="${account}" target=”_blank”>
       <img src="${edges[i].url}">
       <p>${edges[0].caption}</p>
     </a>
