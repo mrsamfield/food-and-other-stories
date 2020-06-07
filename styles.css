@@ -150,12 +150,14 @@ div.instagram-grid div.grid-item {
     width: 6vw;
     min-width: 50px;
     text-align: center;
-    overflow: hidden;
 }
 
-div.instagram-grid div.grid-item:hover {
-    height: 10vw;
-    width: 10vw;
+div.grid-item p {
+    position: relative;
+    bottom: 0;
+    right: 0;
+    max-width: 300px;
+    background: cornsilk;
 }
 
 div.grid-item img {
