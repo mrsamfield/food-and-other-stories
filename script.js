@@ -4,12 +4,13 @@ const list = document.querySelector('ul.list')
 const account = "https://www.instagram.com/_foodandotherstories"
 const instagramTiles = document.querySelectorAll('div.grid-item')
 const instagramFeed = true
+let edges = []
 
 const getEdges = function() {
   return fetch(account + "/?__a=1")
     .then(response => response.json())
     .then(result => {
-      let edges = result.graphql.user.edge_owner_to_timeline_media.edges;
+      edges = result.graphql.user.edge_owner_to_timeline_media.edges;
       edges.forEach(edge => {
         edge = {
           url: edge.node.display_url,
