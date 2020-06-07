@@ -68,7 +68,7 @@ section.hero-content {
 
 section.hero-content div.hero-articles {
     height: 80%;
-    width: 50vw;
+    width: 66vw;
     margin-right: 20px;
     display: flex;
     flex-flow: row wrap;
@@ -130,7 +130,7 @@ div.secondary-article.landscape {
 
 /* instagram grid */
 section.hero-content div.instagram-feed {
-    width: 20vw;
+    width: 34vw;
     min-width: 200px;
     height: 100%;
     display: flex;
