@@ -109,15 +109,11 @@ div.hero-articles div.hero-articles-col2 {
     height: 100%;
     width: 40%;
     padding: 30px 0 0 0;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: start;
-    align-items: flex-start;
 }
 
 div.secondary-article {
-    height: 42%;
-    margin-bottom: 9px;
+    height: 45%;
+    margin-bottom: 15px;
 }
 
 div.secondary-article.portrait {
@@ -129,7 +125,7 @@ div.secondary-article.landscape {
 }
 
 div.secondary-article div.image-wrap {
-    height: 95%;
+    height: 100%;
     width: 100%;
     text-align: left;
 }
