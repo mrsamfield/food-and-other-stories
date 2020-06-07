@@ -1,74 +1,40 @@
-// https://api.instagram.com/oauth/authorize?client_id=694292177800811&redirect_uri=https://silly-kowalevski-1664a9.netlify.app/&scope=user_profile,user_media&response_type=code
-// ?code=AQAuvpHfhX53Je8iJLH0KLeAqqpWh6x6_MTBGPpgXKx2SKEdWdg20vOhpbjAgfs5xKVeITc5GKz-ODCTkGxv2aQ9W61uxCgKYbnYS7abi8ZxMFw6vsZomcdmMpKPIxOmMQfS-w-lmIpupLc3Kp09IPEodjLZqP0aIfZkmUiaUAYJKW8PqVhq07oEPpgPkTt2s7XDxYo7U_MeHE_IJV4Y8nuw060c7QeHNajG3nKyQ3rLeQ
+console.log("hi");
 
-// curl -X POST \
-//   https://api.instagram.com/oauth/access_token \
-//   -F client_id=694292177800811 \
-//   -F client_secret=4b6adb0730fb860beee76efed2e0d9d6 \
-//   -F grant_type=authorization_code \
-//   -F redirect_uri=https://silly-kowalevski-1664a9.netlify.app/ \
-//   -F code=AQA_E8hMpfHo4TQE7YmhJHo0_Tk49RUFzYTtDFUM7fPby0VbavR6-_Ptpb_Z42hpn0YvTZYb1N7MG1K_YGY_B-jAFrkNV89910Q-Wh1JMBr7wh8OZp-adJKb0vVeWgJGPgDsANIyy3FAFqxYwZkl857J5yBgFWom_tHz1jqj65vu3cJHqVYo2H_D_xa1zzYxEmWPmRTBXd8dRJXSG8hbkCC9KWliom-8S9UbGq7IyhJ0SQ
+const list = document.querySelector('ul.list')
+const account = "https://www.instagram.com/_foodandotherstories"
+const instagramFeed = true
 
-//   "access_token": "IGQVJVaU44SWpGeE9EWWZA4VzlGaXFMWTFfa3Nwdk9IdVZAmNi1NUjdKNXNEM2Q1b000Qk9kY3FHUDlseTNId195WEoxZAS1sQ3pESTNibVlSME5mOFZAxYXpPS3QxcHlpRzVpTGZAuUUlQTlF1RFo4ekhGd0gwakxFbEdna3pR",
-//   "user_id": 17841400017318631
+const getEdges = function() {
+  fetch(account + "/?__a=1")
+    .then(response => response.json())
+    .then(result => {
+      console.log(result);
+      let edges = result.graphql.user.edge_owner_to_timeline_media.edges;
+      console.log(edges);
+      edges.forEach(edge => {
+        console.log(edge);
+        edge = {
+          url: edge.node.display_url,
+          caption: edge.node.edge_media_to_caption.edges[0].node.text
+        }
+        console.log(edge);
+      });
+    });
+};
 
-//   "access_token": "IGQVJXSmxVME9JUWpDS2Q2YjZABQ1hnaDFsNUJlOFY4cEVKZAGYybTEwRm5kQm5FUVNsaE5Sc3N5ZA1VaX0lVTWh5S05vc0hTUngxWWZAORXdOTU5tVHRfZAjFpX0VGOHF4M2dsckgzUEln",
-//     "token_type": "bearer",
-//     "expires_in": 5184000
-
-// 
-const startpoint = 'https://graph.instagram.com/me/'
-const fields = 'id,caption'
-const accessToken = 'IGQVJXSmxVME9JUWpDS2Q2YjZABQ1hnaDFsNUJlOFY4cEVKZAGYybTEwRm5kQm5FUVNsaE5Sc3N5ZA1VaX0lVTWh5S05vc0hTUngxWWZAORXdOTU5tVHRfZAjFpX0VGOHF4M2dsckgzUEln'
-const request1 = `${startpoint}media?fields=${fields}&access_token=${accessToken}`
-let posts = {}
-const numberOfPosts = 12
-const instagramTiles = document.querySelectorAll('div.grid-item')
-const instagramFeed = false
-
-console.log(instagramTiles)
-
-// gets a list of posts
-const getPosts = function () {
-    return fetch(request1)
-             .then(response => response.json())
-            .then(data => {
-              posts = data['data']
-              posts = posts.slice(0, numberOfPosts)
-              return posts
-            })
-}
-
-// adding the link 
-const loadPosts = function (posts) {
-  posts.forEach(post => {
-    return fetch(`https://graph.instagram.com/${post.id}?fields=id,media_type,media_url,username,timestamp&access_token=${accessToken}`)
-             .then(response => response.json())
-             .then(data => {
-               post.url = data['media_url']
-            })
-  })
-
-  console.log(posts)
-  return posts
-}
 
 //adds post html to page
-const addPosts = function (posts) {
+const addPosts = function (edges) {
   instagramTiles.forEach((tile, i) => {
-    console.log(i, "  ", posts[i])
-    tile.innerHTML = `<img src="${posts[i].url}">`
+    tile.innerHTML = + `
+    <a href="${account}">
+      <img src="${edges[i].url}">
+      <p>${edges[0].caption}</p>
+    </a>
+    `
   })
-    // posts.forEach((post, i) => {
-    //   if (i < numberOfPosts) {
-    //     console.log(instagramTiles[i])
-    //     instagramTiles[i].innerHTML = `
-    //     <img src=${posts[i].url}>
-    //     ` 
-    //   }
-    // })
 }
 
 if(instagramFeed === true) {
-  getPosts().then(posts => loadPosts(posts)).then(posts => addPosts(posts))
+  getEdges().then(edges => addPosts(edges))
 }
