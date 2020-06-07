@@ -181,6 +181,8 @@ p.caption-preview {
     padding: 5px 5px 5px 5px;
     border-radius: 9px;
     font-size: 10px;
+    max-width: 300px;
+    transition: width 0.25s, height 0.25s;
   }
 
     /* Extra small devices (phones, 600px and down) */

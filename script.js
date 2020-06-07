@@ -71,7 +71,7 @@ const lockPreview = function (e) {
   if (caption) {
     captionPreview.innerHTML = caption
     captionPreview.style.left = (x - (captionPreview.getBoundingClientRect().width / 2))  + 'px'
-    captionPreview.style.top = y + 15 + window.pageYOffset + 'px'
+    captionPreview.style.top = y + 20 + window.pageYOffset + 'px'
   } else {
     captionPreview.innerHTML = ""
   } 
