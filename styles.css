@@ -71,7 +71,7 @@ section.hero-content {
 
 section.hero-content div.hero-articles {
     height: 80%;
-    width: 66vw;
+    width: 50vw;
     margin-right: 20px;
     display: flex;
     flex-flow: row wrap;
