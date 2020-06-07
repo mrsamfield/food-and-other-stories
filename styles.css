@@ -177,7 +177,7 @@ div.grid-item img {
 p.caption-preview {
     display: inline-block;
     position: absolute;
-    background: cornsilk;
+    background: #fff8dce0;
     padding: 5px 5px 5px 5px;
     border-radius: 9px;
     font-size: 10px;
