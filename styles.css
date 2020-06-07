@@ -130,15 +130,16 @@ div.overlay {
     transform: translate(5%, 5%);
     background-color: #e6956de3;
     border-radius: 5px;
-    display: none;
+    display: flex;
     flex-flow: column;
     justify-content: center;
     align-items: center;
     font-size: 13px;
+    opacity: 0;
 }
 
 div.overlay:hover {
-    display: flex;
+    opacity: 1;
 }
 
 div.overlay > * {
