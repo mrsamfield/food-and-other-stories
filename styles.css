@@ -108,6 +108,9 @@ div.hero-articles div.hero-articles-col2 {
 div.secondary-article {
     height: 45%;
     margin-bottom: 15px;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
 }
 
 div.secondary-article.portrait {
