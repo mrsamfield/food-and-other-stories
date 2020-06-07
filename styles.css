@@ -63,11 +63,11 @@ section.hero-content {
     padding: 0 auto 0 auto;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 section.hero-content div.hero-articles {
-    height: 100%;
+    height: 80%;
     width: 50vw;
     margin-right: 20px;
     display: flex;
@@ -88,7 +88,7 @@ div.hero-articles div.hero-articles-col1 {
 
 div.main-article {
     width: 100%;
-    height: 100%;
+    height: 80%;
 }
 
 div.image-wrap {
@@ -120,11 +120,11 @@ div.secondary-article img {
 }
 
 div.secondary-article.portrait {
-    width: 70%;
+    width: 60%;
 }
 
 div.secondary-article.landscape {
-    height: 35%;
+    height: 40%;
 }
 
 
@@ -137,6 +137,7 @@ section.hero-content div.instagram-feed {
     flex-flow: column nowrap;
     justify-content: flex-start;
     align-items: center;
+    margin: 0px auto;
 }
 
 
