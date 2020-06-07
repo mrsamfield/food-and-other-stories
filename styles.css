@@ -152,14 +152,6 @@ div.instagram-grid div.grid-item {
     text-align: center;
 }
 
-div.grid-item p {
-    position: relative;
-    bottom: 0;
-    right: 0;
-    max-width: 300px;
-    background: cornsilk;
-}
-
 div.grid-item img {
     height: 100%;
     width: 100%;

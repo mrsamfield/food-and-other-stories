@@ -30,12 +30,13 @@ const addPosts = function (edges) {
     tile.innerHTML = `
     <a href="${account}" target=”_blank”>
       <img src="${edges[i].url}">
-      <p>${edges[i].caption}</p>
     </a>
     `
+    tile.setAttribute('data-caption', edges[i].caption)
   })
 }
 
 if(instagramFeed === true) {
   getEdges().then(edges => addPosts(edges))
 }
+
