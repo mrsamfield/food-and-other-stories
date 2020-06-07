@@ -113,18 +113,18 @@ div.secondary-article {
     overflow: hidden;
 }
 
+div.secondary-article img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 div.secondary-article.portrait {
     width: 70%;
 }
 
 div.secondary-article.landscape {
     height: 35%;
-}
-
-div.secondary-article div.image-wrap {
-    height: 100%;
-    width: 100%;
-    text-align: left;
 }
 
 section.hero-content div.instagram-feed {
