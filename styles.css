@@ -63,7 +63,7 @@ section.hero-content {
     padding: 0 auto 0 auto;
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 section.hero-content div.hero-articles {
@@ -72,7 +72,7 @@ section.hero-content div.hero-articles {
     margin-right: 20px;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: center;
     align-items: flex-start;
 }
 
