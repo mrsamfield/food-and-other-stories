@@ -108,6 +108,7 @@ div.secondary-article {
     width: 100%;
     text-align: center;
     overflow: hidden;
+    position: relative;
 }
 
 div.secondary-article.portrait {
