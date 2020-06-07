@@ -128,13 +128,17 @@ div.overlay {
     top: 0;
     left: 0;
     transform: translate(5%, 5%);
-    background-color: #e6956d;
+    background-color: #e6956de3;
     border-radius: 5px;
-    display: flex;
+    display: none;
     flex-flow: column;
     justify-content: center;
     align-items: center;
     font-size: 13px;
+}
+
+div.overlay:hover {
+    display: flex;
 }
 
 div.overlay > * {
