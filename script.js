@@ -1,9 +1,11 @@
 console.log("hi");
 
 const list = document.querySelector('ul.list')
-let account = "https://www.instagram.com/_foodandotherstories"
 const instagramTiles = document.querySelectorAll('div.grid-item')
+const feedButtonTag = document.querySelector('p.feed-button');
+const feedHeaderTags = document.querySelectorAll('span.feed-switch')
 const instagramFeed = true
+let account = "https://www.instagram.com/_foodandotherstories"
 let edges = []
 
 const getEdges = function() {
@@ -41,9 +43,6 @@ if(instagramFeed === true) {
 }
 
 //on clicking 
-const feedButtonTag = document.querySelector('p.feed-button');
-const feedHeaderTags = document.querySelectorAll('span.feed-switch')
-
 
 const switchFunction = function () {
   feedHeaderTags.forEach(header => header.classList.toggle('selected'))
@@ -60,4 +59,26 @@ const switchFunction = function () {
 
 feedButtonTag.addEventListener("click", function () {
   switchFunction()
+})
+
+// Mouse over instagram
+const captionPreview = document.querySelector('p.caption-preview')
+
+const lockPreview = function (e) {
+  let x = e.clientX
+  let y = e.clientY
+  let caption = e.target.parentNode.parentNode.dataset.caption
+  if (caption) {
+    captionPreview.innerHTML = caption
+    captionPreview.style.left = x + 10 + 'px'
+    captionPreview.style.top = y + 10 + 'px'
+  } else {
+    captionPreview.innerHTML = ""
+  } 
+}
+
+
+
+document.addEventListener("mousemove", function (e) {
+  lockPreview(e)
 })
