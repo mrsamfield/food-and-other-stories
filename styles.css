@@ -99,12 +99,6 @@ div.image-wrap {
     overflow: hidden;
 }
 
-div.image-wrap img {
-    height: auto;
-    width: 100%;
-    object-fit: cover;
-}
-
 div.hero-articles div.hero-articles-col2 {
     height: 100%;
     width: 40%;
