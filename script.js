@@ -49,9 +49,11 @@ const switchFunction = function () {
   feedHeaderTags.forEach(header => header.classList.toggle('selected'))
   if (feedHeaderTags[0].classList.contains('selected') === true) {
     account = "https://www.instagram.com/_foodandotherstories"
+    edges = []
     getEdges().then(edges => addPosts(edges))
   } else if (feedHeaderTags[1].classList.contains('selected') === true) {
     account = "https://www.instagram.com/leeannsnyman"
+    edges = []
     getEdges().then(edges => addPosts(edges))
   }
 }
