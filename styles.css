@@ -174,18 +174,6 @@ div.grid-item img {
     object-fit: cover;
 }
 
-p.caption-preview {
-    display: inline-block;
-    position: absolute;
-    background: #fff8dce0;
-    padding: 5px 5px 5px 5px;
-    border-radius: 9px;
-    font-size: 10px;
-    max-width: 300px;
-    transition: width 0.25s, height 0.25s;
-    word-wrap: break-word;
-  }
-
     /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 

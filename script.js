@@ -61,24 +61,3 @@ feedButtonTag.addEventListener("click", function () {
   switchFunction()
 })
 
-// Mouse over instagram
-const captionPreview = document.querySelector('p.caption-preview')
-
-const lockPreview = function (e) {
-  let x = e.clientX
-  let y = e.clientY
-  let caption = e.target.parentNode.parentNode.dataset.caption
-  if (caption) {
-    captionPreview.innerHTML = caption
-    captionPreview.style.left = (x - (captionPreview.getBoundingClientRect().width / 2))  + 'px'
-    captionPreview.style.top = y + 20 + window.pageYOffset + 'px'
-  } else {
-    captionPreview.innerHTML = ""
-  } 
-}
-
-
-
-document.addEventListener("mousemove", function (e) {
-  lockPreview(e)
-})
