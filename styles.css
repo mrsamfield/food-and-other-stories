@@ -19,6 +19,8 @@ h1 {
 
 img {
     border-radius: 2px;
+    background-color: cornsilk;
+    transition: opacity 2s ease-in;
 }
 
 header.header-main {
