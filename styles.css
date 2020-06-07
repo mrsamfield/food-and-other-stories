@@ -138,6 +138,20 @@ section.hero-content div.instagram-feed {
 }
 
 /* instagram grid */
+span.feed-switch {
+    background-color: none;
+    color: black;
+    padding: 5px 10px 5px 10px;
+    border-radius: 15px;
+    transition: background-color 0.25s, color 0.25s;
+}
+  
+span.selected {
+    background-color: black;
+    color: white;
+}
+
+
 div.instagram-grid {
     display: grid;
     grid-gap: 10px;

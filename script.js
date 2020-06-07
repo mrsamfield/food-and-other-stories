@@ -1,7 +1,7 @@
 console.log("hi");
 
 const list = document.querySelector('ul.list')
-const account = "https://www.instagram.com/_foodandotherstories"
+let account = "https://www.instagram.com/_foodandotherstories"
 const instagramTiles = document.querySelectorAll('div.grid-item')
 const instagramFeed = true
 let edges = []
@@ -40,3 +40,22 @@ if(instagramFeed === true) {
   getEdges().then(edges => addPosts(edges))
 }
 
+//on clicking 
+const feedButtonTag = document.querySelector('p.feed-button');
+const feedHeaderTags = document.querySelectorAll('span.feed-switch')
+
+
+const switchFunction = function () {
+  feedHeaderTags.forEach(header => header.classList.toggle('selected'))
+  if (feedHeaderTags[0].classList.contains('selected') === true) {
+    account = "https://www.instagram.com/_foodandotherstories"
+    getEdges().then(edges => addPosts(edges))
+  } else if (feedHeaderTags[1].classList.contains('selected') === true) {
+    account = "https://www.instagram.com/leeannsnyman"
+    getEdges().then(edges => addPosts(edges))
+  }
+}
+
+feedButtonTag.addEventListener("click", function () {
+  switchFunction()
+})
