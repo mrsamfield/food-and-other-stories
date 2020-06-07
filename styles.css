@@ -183,6 +183,7 @@ p.caption-preview {
     font-size: 10px;
     max-width: 300px;
     transition: width 0.25s, height 0.25s;
+    word-wrap: break-word;
   }
 
     /* Extra small devices (phones, 600px and down) */
