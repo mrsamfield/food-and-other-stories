@@ -149,7 +149,7 @@ span.feed-switch {
 }
   
 span.selected {
-    background-color: black;
+    background-color: #e6956e;
     color: white;
 }
 
