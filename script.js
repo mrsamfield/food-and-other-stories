@@ -10,13 +10,13 @@ const getEdges = function() {
   return fetch(account + "/?__a=1")
     .then(response => response.json())
     .then(result => {
-      edges = result.graphql.user.edge_owner_to_timeline_media.edges;
-      edges.forEach(edge => {
+      results = result.graphql.user.edge_owner_to_timeline_media.edges;
+      results.forEach(edge => {
         edge = {
           url: edge.node.display_url,
           caption: edge.node.edge_media_to_caption.edges[0].node.text
         }
-        console.log(edge)
+        edges.push(edge)
       });
       console.log('processed edges =  ', edges);
       return edges
