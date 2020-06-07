@@ -30,7 +30,7 @@ const addPosts = function (edges) {
     tile.innerHTML = `
     <a href="${account}" target=”_blank”>
       <img src="${edges[i].url}">
-      <p>${edges[0].caption}</p>
+      <p>${edges[i].caption}</p>
     </a>
     `
   })
