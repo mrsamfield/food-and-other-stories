@@ -70,7 +70,8 @@ const lockPreview = function (e) {
   let caption = e.target.parentNode.parentNode.dataset.caption
   if (caption) {
     captionPreview.innerHTML = caption
-    captionPreview.style.left = x + 10 + 'px'
+    console.log((x - (captionPreview.getBoundingClientRect().width / 2))  + 'px')
+    captionPreview.style.left = (x - (captionPreview.getBoundingClientRect().width / 2))  + 'px'
     captionPreview.style.top = y + 10 + 'px'
   } else {
     captionPreview.innerHTML = ""
