@@ -127,7 +127,6 @@ div.overlay {
     height: 90%;
     top: 0;
     left: 0;
-    padding: 15px;
     transform: translate(5%, 5%);
     background-color: #e6956d;
     border-radius: 5px;
@@ -139,7 +138,7 @@ div.overlay {
 }
 
 div.overlay > * {
-    margin: 0;
+    margin: 10px;
     padding: 0;
 }
 
