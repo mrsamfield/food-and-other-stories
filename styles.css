@@ -197,7 +197,31 @@ div.grid-item img {
 
     /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+    div.hero-articles div.hero-articles-col1 {
+        height: 100vw;
+        width: 90vw;
+        padding: 0;
+    } 
 
+    div.main-article {
+        width: 100%;
+        height: 100%;
+    }
+
+    div.hero-articles div.hero-articles-col2 {
+        height: 50vw;
+        width: 100vw;
+        padding: 0;
+    }
+
+    div.secondary-article {
+        height: 100%;
+        margin: 0;
+        width: 50%;
+        text-align: center;
+        overflow: hidden;
+        position: relative;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
