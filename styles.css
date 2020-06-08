@@ -57,7 +57,7 @@ div.logo-main-wrap {
 div.logo-main-wrap h1 {
     position: relative;
     top: 36px;
-    font-size: 64px;
+    font-size: 8vmin;
 }
 
 section.hero-content {
