@@ -197,6 +197,20 @@ div.grid-item img {
 
     /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+    section.hero-content {
+        height: 150vw;
+    }
+    
+    section.hero-content div.hero-articles {
+        height: 100%;
+        width: fit-content;
+        margin-right: 0;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
     div.hero-articles div.hero-articles-col1 {
         height: 100vw;
         width: 90vw;
