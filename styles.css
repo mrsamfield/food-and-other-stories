@@ -236,6 +236,14 @@ div.grid-item img {
         overflow: hidden;
         position: relative;
     }
+
+    div.secondary-article.portrait {
+        width: inherit;
+    }
+    
+    div.secondary-article.landscape {
+        height: inherit;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
