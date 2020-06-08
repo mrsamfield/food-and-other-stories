@@ -212,13 +212,13 @@ div.grid-item img {
     }
 
     div.hero-articles div.hero-articles-col1 {
-        height: 100vw;
-        width: 90vw;
+        height: 110vw;
+        width: 100vw;
         padding: 0;
     } 
 
     div.main-article {
-        width: 100vw;
+        width: 90vw;
         height: 100vw;
     }
 
@@ -233,20 +233,20 @@ div.grid-item img {
     }
 
     div.secondary-article {
-        height: 50vw;
+        height: 45vw;
         margin: 0;
-        width: 50vw;
+        width: 45vw;
         text-align: center;
         overflow: hidden;
         position: relative;
     }
 
     div.secondary-article.portrait {
-        width: 50vw;
+        width: 45vw;
     }
     
     div.secondary-article.landscape {
-        height: 50vw;
+        height: 45vw;
     }
 }
 
