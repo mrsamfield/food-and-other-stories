@@ -222,10 +222,11 @@ div.grid-item img {
         height: 100vw;
         width: 100vw;
         padding: 0;
+        margin-bottom: 15px;
     } 
 
     div.main-article {
-        width: 93vw;
+        width: 90vw;
         height: 100vw;
     }
 
@@ -240,8 +241,7 @@ div.grid-item img {
     }
 
     div.secondary-article {
-        height: 44.5vw;
-        margin: 15px 7.5px 0 7.5px;
+        height: 45vw;
         width: 45vw;
         text-align: center;
         overflow: hidden;
