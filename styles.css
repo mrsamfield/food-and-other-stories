@@ -197,6 +197,10 @@ div.grid-item img {
 
     /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+    div.logo-main-wrap {
+        height: 210px;
+    }
+
     section.hero-content div.instagram-feed {
         width: 93vw;
         height: 100%;
