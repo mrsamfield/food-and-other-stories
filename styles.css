@@ -209,7 +209,6 @@ section.stories-section {
     flex-flow: column nowrap;
     justify-content: space-evenly;
     align-items: center;
-    padding: 20px 15vw 20px 15vw;
 }
 
 div.stories-header {
@@ -219,10 +218,11 @@ div.stories-header {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 10vw;
 }
 
 section.stories-section div.grid-wrap {
-    width: 70vw;
+    width: 80vw;
 }
 
 section.stories-section div.grid {
