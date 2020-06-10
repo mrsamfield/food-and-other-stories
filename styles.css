@@ -239,9 +239,17 @@ section.stories-section div.grid-wrap div.story {
     text-align: center;
 }
 
-div.story div.image-wrap {
+div.story img {
     height: 50%;
-    
+    object-fit: cover;
+}
+
+div.story h3 {
+    text-align: left;
+}
+
+div.story p {
+    text-align: left;
 }
 
     /* Extra small devices (phones, 600px and down) */
