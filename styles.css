@@ -214,13 +214,13 @@ div.stories-header {
 section.stories-section div.grid-wrap {
     display: grid;
     grid-gap: 10px;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
 }
 
 section.stories-section div.grid-wrap div.story {
     background-color: lightcoral; 
     height: 300px;
-    width: auto;
+    width: 250px;
     min-width: 250px;
     text-align: center;
 }
