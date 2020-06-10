@@ -38,6 +38,7 @@ header.header-main {
     justify-content: center;
     align-items: center;
     background-color: rgb(250, 247, 242);
+    transition: height 0.25s;
 }
 
 nav.nav-main a {
@@ -59,6 +60,10 @@ div.logo-main-wrap h1 {
     top: 36px;
     font-size: 8vmin;
 }
+
+header h1.title {
+    font-size: 6vmin;
+  }
 
 section.hero-content {
     height: 90vh;

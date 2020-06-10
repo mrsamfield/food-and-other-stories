@@ -61,3 +61,32 @@ feedButtonTag.addEventListener("click", function () {
   switchFunction()
 })
 
+// header on scroll
+
+const mainTitle = document.querySelector('h1.logo-main');
+const title = mainTitle.outerHTML
+
+const header = document.querySelector('header.header-main')
+
+const nav = document.querySelector('nav.nav-main')
+const navContent = nav.outerHTML
+
+const headerHeight = header.getBoundingClientRect().bottom;
+let status = 'unscrolled'
+
+window.addEventListener("scroll", function (e) {
+  const h1Pos = mainTitle.getBoundingClientRect().bottom
+  if(h1Pos < headerHeight) {
+    if (status !== 'scrolled')
+    header.innerHTML = title + navContent
+    header.style.height = '100px';
+    header.style.opacity = '0.7';
+    status = 'scrolled'
+    
+  } else if (status !== 'unscrolled'){
+    header.innerHTML = navContent
+    header.style.height = '80px';
+    header.style.opacity = '1';
+    status = 'unscrolled'
+  }
+}
