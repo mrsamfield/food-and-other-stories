@@ -89,4 +89,4 @@ window.addEventListener("scroll", function (e) {
     header.style.opacity = '1';
     status = 'unscrolled'
   }
-}
+})
