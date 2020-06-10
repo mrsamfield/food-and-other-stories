@@ -239,6 +239,11 @@ section.stories-section div.grid-wrap div.story {
     text-align: center;
 }
 
+div.story div.image-wrap {
+    height: 50%;
+    
+}
+
     /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     div.logo-main-wrap {
