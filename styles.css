@@ -63,7 +63,7 @@ div.logo-main-wrap h1 {
 }
 
 header h1.title {
-    font-size: 6vmin;
+    font-size: 5vmin;
   }
 
 section.hero-content {
@@ -199,6 +199,16 @@ div.grid-item img {
     height: 100%;
     width: 100%;
     object-fit: cover;
+}
+
+/* divider section */
+div.stories-header {
+    width: 100vw;
+    height: 80px;
+    background-color: cornsilk;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
     /* Extra small devices (phones, 600px and down) */
