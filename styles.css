@@ -143,7 +143,8 @@ div.overlay {
     left: 0;
     transform: translate(5%, 5%);
     background-color: #e6956de3;
-    border-radius: 5px;
+    color: white;
+    border-radius: 2px;
     display: flex;
     flex-flow: column;
     justify-content: center;
@@ -241,6 +242,7 @@ section.stories-section div.grid {
 
 section.stories-section div.grid-wrap div.story {
     height: 600px;
+    max-width: 100%;
     width: 500px;
     max-width: 100%;
     text-align: center;
