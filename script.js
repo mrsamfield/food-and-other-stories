@@ -95,3 +95,12 @@ feedButtonTag.addEventListener("click", function () {
 window.addEventListener("scroll", function (e) {
    headerCheck()
 })
+
+//grid tester
+const grid = document.querySelector('div.grid')
+
+const gridFill = function () {
+  grid.innerHTML = grid.innerHTML + (19 * grid.innerHTML)
+}
+
+gridFill()
