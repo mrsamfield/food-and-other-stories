@@ -46,6 +46,13 @@ nav.nav-main a {
     text-decoration: none;
     color: black;
     margin: 0 15px 0 15px;
+    padding: 5px 10px 5px 10px;
+}
+
+nav.nav-main a:hover {
+    border-radius: 15px;
+    background-color: #e6956e;
+    transition: background-color 0.25s, color 0.25s, border-radius 0.25s;
 }
 
 div.logo-main-wrap {
