@@ -100,7 +100,9 @@ window.addEventListener("scroll", function (e) {
 const grid = document.querySelector('div.grid')
 
 const gridFill = function () {
-  grid.innerHTML = grid.innerHTML + (19 * grid.innerHTML)
+  for (let i = 0; i < 20; i++) {
+    grid.innerHTML = grid.innerHTML + grid.innerHTML
+  }
 }
 
 gridFill()
