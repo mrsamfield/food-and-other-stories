@@ -227,7 +227,7 @@ section.stories-section div.grid-wrap {
 
 section.stories-section div.grid {
     display: grid;
-    grid-gap: 40px;
+    grid-gap: 100px;
     grid-template-columns: repeat( auto-fit, minmax(350px, 1fr) );
 }
 
@@ -240,7 +240,7 @@ section.stories-section div.grid-wrap div.story {
 
 div.story img {
     height: 60%;
-    width: 80%;
+    width: 90%;
     object-fit: cover;
 }
 
@@ -259,9 +259,13 @@ div.text-preview p {
     font-size: 12px;
     max-height: 70px;
     overflow: hidden;
+
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-div.text-preview div.gradient {
+/* div.text-preview div.gradient {
     position: absolute;
     top: 0;
     left: 0;
@@ -269,7 +273,7 @@ div.text-preview div.gradient {
     height: 100%;
     background-image: linear-gradient(0deg, white, transparent);
     z-index: 1;
-}
+} */
 
 div.story a {
     font-size: 12px;
