@@ -52,6 +52,7 @@ nav.nav-main a {
 nav.nav-main a:hover {
     border-radius: 15px;
     background-color: #e6956e;
+    color: white;
     transition: background-color 0.25s, color 0.25s, border-radius 0.25s;
 }
 
