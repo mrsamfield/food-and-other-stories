@@ -239,7 +239,8 @@ section.stories-section div.grid-wrap div.story {
 }
 
 div.story img {
-    height: 70%;
+    height: 60%;
+    width: 80%;
     object-fit: cover;
 }
 
@@ -249,6 +250,7 @@ div.story h3 {
 
 div.text-preview {
     position: relative;
+    margin-bottom: 15px;
 }
 
 div.text-preview p {
@@ -270,6 +272,7 @@ div.text-preview div.gradient {
 }
 
 div.story a {
+    font-size: 12px;
     display: inline-block;
     padding: 0 0 5px 0;
     -webkit-box-shadow: inset 0 -1px 0 black;
