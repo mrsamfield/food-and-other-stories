@@ -232,7 +232,6 @@ section.stories-section div.grid {
 }
 
 section.stories-section div.grid-wrap div.story {
-    background-color: lightcoral;
     height: 600px;
     width: 40vwpx;
     max-width: 100%;
@@ -246,6 +245,8 @@ div.story img {
 
 div.story h3 {
     text-align: left;
+    display: block;
+    margin: 15px 15px 15px 0;
 }
 
 div.story p {
