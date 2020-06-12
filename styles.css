@@ -228,19 +228,19 @@ section.stories-section div.grid-wrap {
 section.stories-section div.grid {
     display: grid;
     grid-gap: 10px;
-    grid-template-columns: repeat( auto-fit, minmax(300px, 1fr) );
+    grid-template-columns: repeat( auto-fit, minmax(350px, 1fr) );
 }
 
 section.stories-section div.grid-wrap div.story {
     background-color: lightcoral;
-    height: 500px;
+    height: 600px;
     width: 40vwpx;
     max-width: 100%;
     text-align: center;
 }
 
 div.story img {
-    height: 60%;
+    height: 70%;
     object-fit: cover;
 }
 
@@ -249,9 +249,15 @@ div.story h3 {
 }
 
 div.story p {
+    display: block;
     text-align: left;
-    max-height: 50px;
+    font-size: 12px;
+    max-height: 70px;
     overflow: hidden;
+}
+
+div.story a:hover {
+    box-shadow: 
 }
 
     /* Extra small devices (phones, 600px and down) */
