@@ -247,6 +247,10 @@ div.story h3 {
     text-align: left;
 }
 
+div.text-preview {
+    position: relative;
+}
+
 div.text-preview p {
     display: block;
     text-align: left;
