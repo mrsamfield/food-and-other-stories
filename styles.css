@@ -227,13 +227,13 @@ section.stories-section div.grid-wrap {
 
 section.stories-section div.grid {
     display: grid;
-    grid-gap: 10px;
+    grid-gap: 40px;
     grid-template-columns: repeat( auto-fit, minmax(350px, 1fr) );
 }
 
 section.stories-section div.grid-wrap div.story {
     height: 600px;
-    width: 40vwpx;
+    width: 500px;
     max-width: 100%;
     text-align: center;
 }
@@ -245,8 +245,6 @@ div.story img {
 
 div.story h3 {
     text-align: left;
-    display: block;
-    margin: 15px 15px 15px 0;
 }
 
 div.story p {
