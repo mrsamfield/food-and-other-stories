@@ -50,6 +50,15 @@ nav.nav-main {
     margin: 25px auto 25px auto;
 }
 
+header.header-main.compress:nth-child(2) {
+    margin-top: 0px ;
+}
+
+
+
+
+
+
 nav.nav-main a {
     text-decoration: none;
     color: black;
