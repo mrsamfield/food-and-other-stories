@@ -28,10 +28,12 @@ const headerCheck = function () {
   if(h1Pos < headerHeight) {
     if (status !== 'scrolled')
     header.innerHTML = title + navContent
+    header.style.boxShadow = '0 5px 5px #20202010'
     status = 'scrolled'
     
   } else if (status !== 'unscrolled'){
     header.innerHTML = navContent
+    header.style.boxShadow = 'none'
     status = 'unscrolled'
   }
 }
