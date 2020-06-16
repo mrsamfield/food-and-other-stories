@@ -28,12 +28,10 @@ const headerCheck = function () {
   if(h1Pos < headerHeight) {
     if (status !== 'scrolled')
     header.innerHTML = title + navContent
-    nav.classList.add('compress')
     status = 'scrolled'
     
   } else if (status !== 'unscrolled'){
     header.innerHTML = navContent
-    nav.classList.remove('compress')
     status = 'unscrolled'
   }
 }
