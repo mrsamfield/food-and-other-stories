@@ -257,6 +257,7 @@ div.story img {
     height: 60%;
     width: 90%;
     object-fit: cover;
+    background-color: lightgray;
 }
 
 div.story h3 {
