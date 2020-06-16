@@ -50,8 +50,8 @@ nav.nav-main {
     margin: 25px auto 25px auto;
 }
 
-header.compress header:nth-child(2) {
-    margin-top: 0;
+nav.nav-main.compress {
+    margin: 0px auto 25px auto;
 }
 
 
