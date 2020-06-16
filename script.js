@@ -21,18 +21,20 @@ const headerHeight = header.getBoundingClientRect().bottom;
 let status = 'unscrolled'
 
 
+
+
 const headerCheck = function () {
   const h1Pos = mainTitle.getBoundingClientRect().bottom
   if(h1Pos < headerHeight) {
     if (status !== 'scrolled')
     header.innerHTML = title + navContent
-    header.style.height = '100px';
+    // header.style.height = '100px';
     header.style.opacity = '0.7';
     status = 'scrolled'
     
   } else if (status !== 'unscrolled'){
     header.innerHTML = navContent
-    header.style.height = '80px';
+    // header.style.height = '80px'; 
     header.style.opacity = '1';
     status = 'unscrolled'
   }
