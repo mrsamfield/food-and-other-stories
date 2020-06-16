@@ -4,7 +4,7 @@
 
 body {
     font-family: 'Libre Baskerville', serif;
-    font-size: 1.3rem;
+    font-size: 1rem;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
@@ -41,8 +41,9 @@ header.header-main {
     transition: height 0.25s;
 }
 
-header.header-main h1 {
+header.header-main h1.logo-main {
     margin: 25px auto 25px auto;
+    font-size: 2rem;
 }
 
 nav.nav-main {
@@ -76,10 +77,6 @@ div.logo-main-wrap h1 {
     top: 36px;
     font-size: 8vmin;
 }
-
-header h1.title {
-    font-size: 5vmin;
-  }
 
 section.hero-content {
     height: 90vh;
@@ -156,7 +153,6 @@ div.overlay {
     flex-flow: column;
     justify-content: center;
     align-items: center;
-    font-size: 13px;
     opacity: 0;
 }
 
@@ -276,7 +272,6 @@ div.story h3 {
 div.story p {
     display: block;
     text-align: left;
-    font-size: 15px;
     max-height: 70px;
     overflow: hidden;
     margin-bottom: 15px;
