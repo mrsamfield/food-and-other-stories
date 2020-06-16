@@ -231,13 +231,17 @@ div.stories-header {
 }
 
 section.stories-section div.grid-wrap {
-    width: 80vw;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 section.stories-section div.grid {
     display: grid;
-    grid-gap: 100px;
-    grid-template-columns: repeat( auto-fit, minmax(350px, 1fr) );
+    grid-gap: 60px;
+    grid-template-columns: repeat( auto-fit, minmax(300px, 1fr) );
+    width: 80%;
 }
 
 section.stories-section div.grid-wrap div.story {
@@ -264,7 +268,7 @@ div.story h3 {
 div.story p {
     display: block;
     text-align: left;
-    font-size: 12px;
+    font-size: 15px;
     max-height: 70px;
     overflow: hidden;
     margin-bottom: 15px;
