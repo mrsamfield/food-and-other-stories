@@ -89,13 +89,15 @@ section.hero-content {
 }
 
 section.hero-content div.hero-articles {
-    height: 80%;
-    width: 50vw;
+    height: 700px;
+    max-height: 90%;
     margin-right: 20px;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: flex-start;
+    width: 800px;
+    max-width: 90%;
 }
 
 div.hero-articles div.hero-articles-col1 {
@@ -392,7 +394,6 @@ div.story div.color-block {
 
     section.hero-content div.hero-articles {
         height: 100%;
-        width: 60vw;
         align-items: center; 
 
     }
