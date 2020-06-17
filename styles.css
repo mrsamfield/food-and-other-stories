@@ -270,8 +270,6 @@ div.story h3 {
     text-align: left;
 }
 
-
-
 div.story p {
     display: block;
     text-align: left;
@@ -310,6 +308,21 @@ div.story div.color-block {
     transform: translate(15%, 10%);
     z-index: -1;
 }
+
+/* footer section */
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 250px;
+    background-color: #faf7f2;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
 
     /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
