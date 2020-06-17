@@ -73,7 +73,7 @@ div.logo-main-wrap {
     width: 100vw;
 }
 
-h1.logo-main {
+div.logo-main-wrap h1.logo-main {
     position: relative;
     top: 36px;
     font-size: 8vmin;
