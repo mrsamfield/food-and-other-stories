@@ -311,9 +311,6 @@ div.story div.color-block {
 
 /* footer section */
 footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
     width: 100vw;
     height: 250px;
     background-color: #faf7f2;
@@ -323,6 +320,10 @@ footer {
     align-items: center;
 }
 
+span.glow-heart {
+    color: lightpink;
+    text-shadow: 0px 0px 5px red;
+}
 
     /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
