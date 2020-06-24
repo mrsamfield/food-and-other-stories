@@ -388,6 +388,25 @@ span.glow-heart {
     div.secondary-article.landscape {
         height: 45vw;
     }
+    
+    section.stories-section div.grid {
+        width: 100%;
+    }
+
+    section.stories-section div.grid-wrap div.story {
+        max-width: none;
+        max-width: none;
+        width: 100%;
+    }
+
+    div.story h3 {
+        margin-left: 5%;
+    }
+
+    div.story p {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
