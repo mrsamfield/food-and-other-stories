@@ -247,7 +247,8 @@ section.stories-section div.grid {
     display: grid;
     grid-gap: 60px;
     grid-template-columns: repeat( auto-fit, minmax(300px, 1fr) );
-    width: 80%;
+    max-width: 1200px;
+    width: 90%;
 }
 
 section.stories-section div.grid-wrap div.story {
@@ -264,6 +265,10 @@ div.story img {
     width: 90%;
     object-fit: cover;
     background-color: lightgray;
+}
+
+div.story hr {
+    height: 1px;
 }
 
 div.story h3 {
@@ -406,6 +411,10 @@ span.glow-heart {
     div.story p {
         margin-left: 5%;
         margin-right: 5%;
+    }
+
+    hr {
+        width: 90%;
     }
 }
 
