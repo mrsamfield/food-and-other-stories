@@ -25,7 +25,7 @@ const spaceId= 'z58lj2o43c3r'
 const environmentId = 'master'
 const accessToken = 'fBVTlOPEBJGx6I1QQqBtx0y99-N2AUB-2CVVfj-yKjE'
 
-const url = `https://cdn.contentful.com/spaces/${spaceIdnum}/environments/${environmentId}/entries?access_token=${accessToken}&order=fields.order&content_type=blogPost`
+const url = `https://cdn.contentful.com/spaces/${spaceId}/environments/${environmentId}/entries?access_token=${accessToken}&order=fields.order&content_type=blogPost`
 
 
 
