@@ -88,6 +88,10 @@ const grabContent = function() {
     // turn our contentful data into something more useful
     console.log(contentfulURL)
     console.log(data)
+
+    data.items.forEach(item => {
+      console.log(item)
+    })
   })
 }
 
