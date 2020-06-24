@@ -25,7 +25,7 @@ const spaceId= 'z58lj2o43c3r'
 const environmentId = 'master'
 const accessToken = 'fBVTlOPEBJGx6I1QQqBtx0y99-N2AUB-2CVVfj-yKjE'
 
-const url = `https://cdn.contentful.com/spaces/${spaceId}/environments/${environmentId}/entries?access_token=${accessToken}&content_type=blogPost`
+const contentfulURL = `https://cdn.contentful.com/spaces/${spaceId}/environments/${environmentId}/entries?access_token=${accessToken}&content_type=blogPost`
 
 
 
@@ -80,18 +80,19 @@ if(instagramFeed === true) {
 }
 
 // contentful api - grab content
-const grabData = function() {
-  return fetch(url)
+const grabContent = function(contentfulURL) {
+  return fetch(contentfulURL)
   .then(response => response.json())
   .then(data => {
 
     // turn our contentful data into something more useful
+    console.log(contentfulURL)
     console.log(data)
   })
 }
 
 // run grabData on load
-grabData()
+grabContent()
 
 //on clicking 
 
