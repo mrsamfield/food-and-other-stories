@@ -269,6 +269,8 @@ div.story img {
 
 div.story hr {
     height: 1px;
+    border: none;
+    background-color: black;
 }
 
 div.story h3 {
@@ -291,7 +293,7 @@ div.story p {
 div.story a {
     font-size: 1rem;
     display: inline-block;
-    padding: 0 0 5px 0;
+    padding: 5px;
     -webkit-box-shadow: inset 0 -1px 0 black;
     box-shadow: inset 0 -1px 0 black;
     position: relative;
@@ -300,7 +302,8 @@ div.story a {
 }
 
 div.story a:hover {
-    box-shadow: inset 0 -15px 0 #d5a493 !important; 
+    box-shadow: inset 0 -15px 0 #d5a493 !important;
+    transform: translate(0, -3px); 
 }
 
 div.story div.color-block {
