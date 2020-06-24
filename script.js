@@ -20,6 +20,13 @@ const navContent = nav.outerHTML
 const headerHeight = header.getBoundingClientRect().bottom;
 let status = 'unscrolled'
 
+//Contentful api consts
+const spaceId= 'z58lj2o43c3r'
+const environmentId = 'master'
+const accessToken = 'fBVTlOPEBJGx6I1QQqBtx0y99-N2AUB-2CVVfj-yKjE'
+
+const url = `https://cdn.contentful.com/spaces/${spaceIdnum}/environments/${environmentId}/entries?access_token=${accessToken}&order=fields.order&content_type=blogPost`
+
 
 
 
@@ -72,6 +79,20 @@ if(instagramFeed === true) {
   getEdges().then(edges => addPosts(edges))
 }
 
+// contentful api - grab content
+const grabData = function() {
+  return fetch(url)
+  .then(response => response.json())
+  .then(data => {
+
+    // turn our contentful data into something more useful
+    console.log(data)
+  })
+}
+
+// run grabData on load
+grabData()
+
 //on clicking 
 
 const switchFunction = function () {
@@ -108,4 +129,8 @@ const gridFill = function () {
   }
 }
 
+//temporary helper
 gridFill()
+
+
+
