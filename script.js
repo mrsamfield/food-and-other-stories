@@ -85,7 +85,7 @@ const grabContent = function() {
   .then(response => response.json())
   .then(data => {
     
-    const data = data
+    let data = data
   })
 }
 
