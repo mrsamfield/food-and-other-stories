@@ -84,16 +84,12 @@ const grabContent = function() {
   return fetch(contentfulURL)
   .then(response => response.json())
   .then(data => {
-
-    // turn our contentful data into something more useful
-    console.log(contentfulURL)
-    console.log(data)
-
-    data.items.forEach(item => {
-      console.log(item)
-    })
+    
+    const data = data
   })
 }
+
+
 
 // run grabData on load
 grabContent()
