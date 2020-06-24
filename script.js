@@ -80,7 +80,7 @@ if(instagramFeed === true) {
 }
 
 // contentful api - grab content
-const grabContent = function(contentfulURL) {
+const grabContent = function() {
   return fetch(contentfulURL)
   .then(response => response.json())
   .then(data => {
