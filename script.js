@@ -1,4 +1,5 @@
-import { documentToHtmlString } from '@contentful/rich-text-html-renderer';
+//testing
+import documentToHtmlString from '@contentful/rich-text-html-renderer';
 console.log("hi");
 
 const list = document.querySelector('ul.list')
@@ -102,6 +103,8 @@ const grabContent = function() {
          title: post.fields.title,
          keyImage: connectImage(post.fields.keyImage.sys.id, assets),
          sampleQuote:  post.fields.sampleQuote,
+
+         //testing
          blogBody: documentToHtmlString(post.fields.blogBody),
          color: post.fields.colour
        }

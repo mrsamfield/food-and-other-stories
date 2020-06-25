@@ -1,0 +1,18 @@
+{
+  "name": "foodandotherstories",
+  "version": "1.0.0",
+  "description": "dependencies for faos",
+  "main": "script.js",
+  "scripts": {
+    "test": "npm install @contentful/rich-text-html-renderer"
+  },
+  "repository": {
+    "type": "git",
+    "url": "/mrsamfield/food-and-other-stories"
+  },
+  "author": "Sam Field",
+  "license": "ISC",
+  "dependencies": {
+    "@contentful/rich-text-html-renderer": "^14.1.1"
+  }
+}
