@@ -1,4 +1,6 @@
 console.log("hi");
+import { documentToHtmlString } from '@contentful/rich-text-html-renderer';
+
 
 const list = document.querySelector('ul.list')
 const instagramTiles = document.querySelectorAll('div.grid-item')
@@ -93,13 +95,15 @@ const grabContent = function() {
      console.log(assets)
 
      let output = []
+     
+      
 
      posts.forEach(post => {
        post = {
          title: post.fields.title,
          keyImage: connectImage(post.fields.keyImage.sys.id, assets),
          sampleQuote:  post.fields.sampleQuote,
-         blogBody: post.fields.blogBody,
+         blogBody: documentToHtmlString(post.fields.blogBody),
          color: post.fields.colour
        }
 
@@ -111,6 +115,8 @@ const grabContent = function() {
      return output
   })
 }
+
+
 
 const connectImage = function (ID, assets) {
   let url = ''
@@ -125,6 +131,8 @@ const connectImage = function (ID, assets) {
 
   return url
 }
+
+
 
 
 
