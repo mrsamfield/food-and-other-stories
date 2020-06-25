@@ -4,7 +4,7 @@ const list = document.querySelector('ul.list')
 const instagramTiles = document.querySelectorAll('div.grid-item')
 const feedButtonTag = document.querySelector('p.feed-button');
 const feedHeaderTags = document.querySelectorAll('span.feed-switch')
-const instagramFeed = true
+const instagramFeed = false
 let account = "https://www.instagram.com/_foodandotherstories"
 let edges = []
 
@@ -88,29 +88,33 @@ const grabContent = function() {
 
      let posts = data.items
      
-     //get main image - could be a func?
      let assets = data.includes.Asset
-     let mainImageID = post.fields.keyImage.sys.id
-     let mainImageURL = ''
+
      console.log(assets)
-
-     const imageData = assets.find(asset => {
-       return asset.sys.id == mainImageID
-     })
-
-     if (imageData) {
-      imageURL = imageData.fields.file.url
-     }
 
 
      posts.forEach(post => {
        post = {
          title: post.fields.title,
-         mainImage: imageURL,
+         mainImage: connectImage(post.fields.keyImage.sys.id, assets)
        }
        console.log('post =  ', post)
      })
   })
+}
+
+const connectImage = function (ID, assets) {
+  let url = ''
+  
+  const imageData = assets.find(asset => {
+    return asset.sys.id == mainImageID
+  })
+  
+  if (imageData) {
+    url = imageData.fields.file.url
+  }
+
+  return url
 }
 
 
