@@ -1,5 +1,3 @@
-import { documentToHtmlString } from '/node_modules/@contentful/rich-text-html-renderer.js';
-
 console.log("hi");
 
 const list = document.querySelector('ul.list')
