@@ -1,4 +1,4 @@
-import * as richTextToHTML from '/node_modules/@contentful/rich-text-html-renderer/dist/rich-text-html-renderer.es5.js';
+import { documentToHtmlString } from '/node_modules/@contentful/rich-text-html-renderer/dist/rich-text-html-renderer.es5.js';
 
 console.log("hi");
 
