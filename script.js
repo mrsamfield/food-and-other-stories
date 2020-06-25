@@ -1,4 +1,4 @@
-import documentToHtmlString from './@contentful/rich-text-html-renderer';
+import documentToHtmlString from 'food-and-other-stories/node_modules/@contentful/rich-text-html-renderer/dist/rich-text-html-renderer.es5.js';
 console.log("hi");
 
 const list = document.querySelector('ul.list')
