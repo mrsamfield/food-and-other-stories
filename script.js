@@ -84,12 +84,31 @@ const grabContent = function() {
   return fetch(contentfulURL)
   .then(response => response.json())
   .then(data => {
+    console.log('data =  ', data)
+
      let posts = data.items
+     
+     //get main image - could be a func?
+     let assets = data.includes.Asset
+     let mainImageID = post.fields.keyImage.sys.id
+     let mainImageURL = ''
+     console.log(assets)
+
+     const imageData = assets.find(asset => {
+       return asset.sys.id == mainImageID
+     })
+
+     if (imageData) {
+      imageURL = imageData.fields.file.url
+     }
+
+
      posts.forEach(post => {
        post = {
-         title: post.fields.title
+         title: post.fields.title,
+         mainImage: imageURL,
        }
-       console.log(post.title)
+       console.log('post =  ', post)
      })
   })
 }
