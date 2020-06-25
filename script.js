@@ -1,4 +1,4 @@
-import { documentToHtmlString } from './@contentful/rich-text-html-renderer.js';
+import { documentToHtmlString } from '/node_modules/@contentful/rich-text-html-renderer/';
 
 console.log("hi");
 
