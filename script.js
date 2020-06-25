@@ -107,7 +107,7 @@ const connectImage = function (ID, assets) {
   let url = ''
   
   const imageData = assets.find(asset => {
-    return asset.sys.id == mainImageID
+    return asset.sys.id == ID
   })
   
   if (imageData) {
