@@ -92,14 +92,23 @@ const grabContent = function() {
 
      console.log(assets)
 
+     let output = []
 
      posts.forEach(post => {
        post = {
          title: post.fields.title,
-         mainImage: connectImage(post.fields.keyImage.sys.id, assets)
+         keyImage: connectImage(post.fields.keyImage.sys.id, assets),
+         sampleQuote:  post.fields.sampleQuote,
+         blogBody: post.fields.blogBody,
+         color: post.fields.colour
        }
-       console.log('post =  ', post)
+
+       output.push(post)
+       
      })
+    
+     console.log(output)
+     return output
   })
 }
 
