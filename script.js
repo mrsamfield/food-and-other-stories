@@ -91,7 +91,6 @@ const grabContent = function() {
        }
        console.log(post.title)
      })
-     })
   })
 }
 
