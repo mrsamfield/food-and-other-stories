@@ -1,6 +1,5 @@
-console.log("hi");
 import { documentToHtmlString } from '@contentful/rich-text-html-renderer';
-
+console.log("hi");
 
 const list = document.querySelector('ul.list')
 const instagramTiles = document.querySelectorAll('div.grid-item')
