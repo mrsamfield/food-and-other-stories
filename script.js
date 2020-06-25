@@ -84,7 +84,14 @@ const grabContent = function() {
   return fetch(contentfulURL)
   .then(response => response.json())
   .then(data => {
-     console.log(data)
+     let posts = data.items
+     posts.forEach(post => {
+       post = {
+         title: post.fields.title
+       }
+       console.log(post.title)
+     })
+     })
   })
 }
 
