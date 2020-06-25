@@ -84,8 +84,7 @@ const grabContent = function() {
   return fetch(contentfulURL)
   .then(response => response.json())
   .then(data => {
-    
-    let data = data
+     console.log(data)
   })
 }
 
