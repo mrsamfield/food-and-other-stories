@@ -104,7 +104,7 @@ const grabContent = function() {
          sampleQuote:  post.fields.sampleQuote,
 
          //testing
-         blogBody: documentToHtmlString(post.fields.blogBody),
+        //  blogBody: documentToHtmlString(post.fields.blogBody),
          color: post.fields.colour
        }
 
