@@ -13,5 +13,7 @@
     "url": "https://github.com/mrsamfield/food-and-other-stories/issues"
   },
   "homepage": "https://github.com/mrsamfield/food-and-other-stories#readme",
-  "dependencies": {}
+  "dependencies": {
+    "@contentful/rich-text-html-renderer": "^14.1.1"
+  }
 }
