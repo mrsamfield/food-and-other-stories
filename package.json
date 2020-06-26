@@ -1,0 +1,19 @@
+{
+  "name": "food-and-other-stories",
+  "version": "1.0.0",
+  "description": "food and other stories npm packages",
+  "main": "script.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrsamfield/food-and-other-stories.git"
+  },
+  "author": "Sam Field",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mrsamfield/food-and-other-stories/issues"
+  },
+  "homepage": "https://github.com/mrsamfield/food-and-other-stories#readme",
+  "dependencies": {
+    "contentful": "^7.14.5"
+  }
+}
