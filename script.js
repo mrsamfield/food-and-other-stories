@@ -1,6 +1,3 @@
-// import * as contentful from 'contentful';
-import { documentToHtmlString } from './@contentful/rich-text-html-renderer';
-
 console.log("hi");
 
 const list = document.querySelector('ul.list')
@@ -106,7 +103,7 @@ const grabContent = function() {
          sampleQuote:  post.fields.sampleQuote,
 
          //testing
-         blogBody: documentToHtmlString.documentToHtmlString(post.fields.blogBody),
+         blogBody: post.fields.blogBody,
          color: post.fields.colour
        }
 
