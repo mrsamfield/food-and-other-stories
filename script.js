@@ -1,7 +1,3 @@
-import richTextHtmlRenderer from "/@contentful/rich-text-html-renderer";
-
-console.log(richTextHtmlRenderer);
-
 const list = document.querySelector('ul.list')
 const instagramTiles = document.querySelectorAll('div.grid-item')
 const feedButtonTag = document.querySelector('p.feed-button');
