@@ -1,3 +1,4 @@
+import richTextHtmlRenderer from "@contentful/rich-text-html-renderer";
 console.log("hi");
 
 const list = document.querySelector('ul.list')
