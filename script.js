@@ -178,5 +178,7 @@ const gridFill = function () {
 //temporary helper
 gridFill()
 
+//Blog post tester
+const blogContentTag = document.querySelector('div.blog-content')
 
-
+blogContentTag.innerHTML = getContent()[0]

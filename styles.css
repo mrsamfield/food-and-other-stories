@@ -72,6 +72,10 @@ nav.nav-main a.selected {
     transition: background-color 0.25s, color 0.25s, border-radius 0.25s;
 }
 
+div.homepage {
+    display: hidden;
+}
+
 div.logo-main-wrap {
     display: flex;
     justify-content: center;
