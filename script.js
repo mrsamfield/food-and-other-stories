@@ -78,40 +78,30 @@ if(instagramFeed === true) {
 }
 
 // contentful api - grab content
-const grabContent = function() {
-  return fetch(contentfulURL)
-  .then(response => response.json())
-  .then(data => {
-    console.log('data =  ', data)
+const grabContent = async function() {
+  const response = await fetch(contentfulURL);
+  const data = await response.json();
+  console.log('data =  ', data);
+  let posts = data.items;
+  let assets = data.includes.Asset;
+  console.log(assets);
+  blogContent = [];
+  posts.forEach(post => {
+    post = {
+      title: post.fields.title,
+      keyImage: connectImage(post.fields.keyImage.sys.id, assets),
+      sampleQuote: post.fields.sampleQuote,
 
-     let posts = data.items
-     
-     let assets = data.includes.Asset
+      //testing
+      blogBody: converter.makeHtml(post.fields.blogBody),
+      color: post.fields.colour
+    };
 
-     console.log(assets)
+    blogContent.push(post);
 
-     blogContent = []
-     
-      
-
-     posts.forEach(post => {
-       post = {
-         title: post.fields.title,
-         keyImage: connectImage(post.fields.keyImage.sys.id, assets),
-         sampleQuote:  post.fields.sampleQuote,
-
-         //testing
-         blogBody: converter.makeHtml(post.fields.blogBody),
-         color: post.fields.colour
-       }
-
-       blogContent.push(post)
-       
-     })
-    
-     console.log(blogContent)
-     return blogContent
-  })
+  });
+  console.log(blogContent);
+  return blogContent;
 }
 
 
