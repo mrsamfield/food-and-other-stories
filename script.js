@@ -134,7 +134,7 @@ const connectImage = function (ID, assets) {
 
 
 // run grabData on load
-let content = grabContent()
+let posts = grabContent()
 
 //on clicking 
 
@@ -181,4 +181,4 @@ gridFill()
 //Blog post tester
 const blogContentTag = document.querySelector('div.blog-content')
 
-blogContentTag.innerHTML = content[0]
+blogContentTag.innerHTML = posts[0]
