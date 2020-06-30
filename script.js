@@ -25,6 +25,7 @@ const accessToken = 'fBVTlOPEBJGx6I1QQqBtx0y99-N2AUB-2CVVfj-yKjE'
 
 const contentfulURL = `https://cdn.contentful.com/spaces/${spaceId}/environments/${environmentId}/entries?access_token=${accessToken}&content_type=blogPost`
 const converter = new showdown.Converter();
+let blogContent = []
 
 
 const headerCheck = function () {
@@ -89,7 +90,7 @@ const grabContent = function() {
 
      console.log(assets)
 
-     let output = []
+     blogContent = []
      
       
 
@@ -104,12 +105,12 @@ const grabContent = function() {
          color: post.fields.colour
        }
 
-       output.push(post)
+       blogContent.push(post)
        
      })
     
-     console.log(output)
-     return output
+     console.log(blogContent)
+     return blogContent
   })
 }
 
@@ -134,7 +135,7 @@ const connectImage = function (ID, assets) {
 
 
 // run grabData on load
-let posts = grabContent()
+grabContent()
 
 //on clicking 
 
@@ -181,4 +182,4 @@ gridFill()
 //Blog post tester
 const blogContentTag = document.querySelector('div.blog-content')
 
-blogContentTag.innerHTML = posts[0]
+blogContentTag.innerHTML = blogContent[0]
