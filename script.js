@@ -161,15 +161,18 @@ window.addEventListener("scroll", function (e) {
 })
 
 //grid tester
-const grid = document.querySelector('div.grid')
+const grids = document.querySelectorAll('div.grid')
 
 const gridFill = function () {
   console.log('fill started')
-  const storyTemp = grid.innerHTML
-  for (let i = 0; i < 20; i++) {
-    console.log('fill i')
-    grid.innerHTML += storyTemp
-  }
+  grids.forEach(grid => {
+    const storyTemp = grid.innerHTML
+    for (let i = 0; i < 20; i++) {
+      console.log('fill i')
+      grid.innerHTML += storyTemp
+    }
+  })
+  
 }
 
 //temporary helper
