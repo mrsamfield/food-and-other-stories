@@ -24,8 +24,7 @@ const environmentId = 'master'
 const accessToken = 'fBVTlOPEBJGx6I1QQqBtx0y99-N2AUB-2CVVfj-yKjE'
 
 const contentfulURL = `https://cdn.contentful.com/spaces/${spaceId}/environments/${environmentId}/entries?access_token=${accessToken}&content_type=blogPost`
-
-
+const converter = new showdown.Converter();
 
 
 const headerCheck = function () {
@@ -101,7 +100,7 @@ const grabContent = function() {
          sampleQuote:  post.fields.sampleQuote,
 
          //testing
-         blogBody: post.fields.blogBody,
+         blogBody: converter.makeHtml(post.fields.blogBody),
          color: post.fields.colour
        }
 
