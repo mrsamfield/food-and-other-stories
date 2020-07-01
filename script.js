@@ -127,7 +127,7 @@ grabContent().then(blogContent => {
 
   const blogContentTag = document.querySelector('div.blog-content')
 
-   blogContentTag.innerHTML = blogContent[0]
+   blogContentTag.innerHTML = blogContent[0].title
 })
 
 //on clicking 
