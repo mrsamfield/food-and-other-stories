@@ -86,8 +86,6 @@ const grabContent = async function() {
   let posts = data.items;
   let assets = data.includes.Asset;
   
-  blogContent = [];
-  
   posts.forEach(post => {
     post = {
       title: post.fields.title,
