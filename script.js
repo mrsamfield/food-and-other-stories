@@ -129,10 +129,12 @@ grabContent().then(blogContent => {
 
    blogContentTag.innerHTML = `
    <article class="blog-view" data-color="${blogContent[0].color}">
+     <h1>${blogContent[0].title}</h1>
      <img src="${blogContent[0].keyImage}">
-     <h2>${blogContent[0].title}</h2>
-     <h3>${blogContent[0].sampleQuote}</h3>
-     <div class="blog-body">${blogContent[0].blogBody}</div>
+     <div class="text">
+       <h2>${blogContent[0].sampleQuote}</h2>
+       <div class="blog-body">${blogContent[0].blogBody}</div>
+     <div>
    </article>
    `
 })
