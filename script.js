@@ -81,27 +81,27 @@ if(instagramFeed === true) {
 const grabContent = async function() {
   const response = await fetch(contentfulURL);
   const data = await response.json();
-  console.log('data =  ', data);
+  console.log('data at fetch =  ', data);
+  
   let posts = data.items;
   let assets = data.includes.Asset;
-  console.log(assets);
+  
   blogContent = [];
+  
   posts.forEach(post => {
     post = {
       title: post.fields.title,
       keyImage: connectImage(post.fields.keyImage.sys.id, assets),
       sampleQuote: post.fields.sampleQuote,
-
-      //testing
       blogBody: converter.makeHtml(post.fields.blogBody),
       color: post.fields.colour
     };
 
     blogContent.push(post);
-
+    
   });
-  console.log(blogContent);
-  return blogContent;
+  console.log('at end of grab content, blogContent is =  ', blogContent);
+  return blogContent
 }
 
 
@@ -123,9 +123,12 @@ const connectImage = function (ID, assets) {
 
 
 
-
 // run grabData on load
-grabContent()
+grabContent().then(blogContent => {
+  const blogContentTag = document.querySelector('div.blog-content')
+
+   blogContentTag.innerHTML = blogContent[0]
+})
 
 //on clicking 
 
@@ -168,8 +171,3 @@ const gridFill = function () {
 
 //temporary helper
 gridFill()
-
-//Blog post tester
-const blogContentTag = document.querySelector('div.blog-content')
-
-blogContentTag.innerHTML = blogContent[0]
