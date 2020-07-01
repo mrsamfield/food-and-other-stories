@@ -25,7 +25,7 @@ const accessToken = 'fBVTlOPEBJGx6I1QQqBtx0y99-N2AUB-2CVVfj-yKjE'
 
 const contentfulURL = `https://cdn.contentful.com/spaces/${spaceId}/environments/${environmentId}/entries?access_token=${accessToken}&content_type=blogPost`
 const converter = new showdown.Converter();
-let blogContent = []
+const blogContent = []
 
 
 const headerCheck = function () {
@@ -125,6 +125,8 @@ const connectImage = function (ID, assets) {
 
 // run grabData on load
 grabContent().then(blogContent => {
+  console.log('then processing run')
+
   const blogContentTag = document.querySelector('div.blog-content')
 
    blogContentTag.innerHTML = blogContent[0]
