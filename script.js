@@ -127,7 +127,14 @@ grabContent().then(blogContent => {
 
   const blogContentTag = document.querySelector('div.blog-content')
 
-   blogContentTag.innerHTML = blogContent[0].title
+   blogContentTag.innerHTML = `
+   <article class="blog-view" data-color="${blogContent[0].color}">
+     <img src="${blogContent[0].keyImage}">
+     <h2>${blogContent[0].title}</h2>
+     <h3>${blogContent[0].sampleQuote}</h3>
+     <div class="blog-body">${blogContent[0].blogBody}</div>
+   </article>
+   `
 })
 
 //on clicking 

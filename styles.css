@@ -330,6 +330,12 @@ div.story div.color-block {
     border-radius: 4px;
 }
 
+/* article view */
+
+article.blog-view {
+  margin-top: 50px;
+}
+
 /* footer section */
 footer {
     width: 100vw;
