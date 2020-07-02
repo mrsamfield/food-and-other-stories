@@ -333,7 +333,7 @@ div.story div.color-block {
 /* article view */
 
 article.blog-view {
-    margin-top: 150px;
+    margin: 150px 0 150px 0;
     text-align: ;
     display: flex;
     flex-flow: column nowrap;
@@ -356,6 +356,11 @@ article.blog-view h1.title {
 
 div.text {
     max-width: 800px;
+    text-align: center;
+}
+
+div.text img {
+    width: 90%;
 }
 
 div.text h2.mainquote {
