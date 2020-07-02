@@ -132,7 +132,7 @@ grabContent().then(blogContent => {
      <img class="banner" src="${blogContent[0].keyImage}">
      <h1 class="title">${blogContent[0].title}</h1>
      <div class="text">
-       <h2>${blogContent[0].sampleQuote}</h2>
+       <h2 class="mainquote">${blogContent[0].sampleQuote}</h2>
        <div class="blog-body">${blogContent[0].blogBody}</div>
      <div>
    </article>

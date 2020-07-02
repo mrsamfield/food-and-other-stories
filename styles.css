@@ -347,12 +347,22 @@ article.blog-view img.banner {
 }
 
 article.blog-view h1.title {
-    background-color: antiquewhite;
-    padding: 300px;
+    background-color: #e6956e;
+    padding: 40px;
+    position: relative;
+    top: -50px;
+    color: white;
 }
 
 div.text {
     max-width: 800px;
+}
+
+div.text h2.mainquote {
+    color: #e6956e;
+    border-left: 3px #e6956e solid;
+    padding-left: 10px;
+    margin-bottom: 50px;
 }
 
 /* footer section */
