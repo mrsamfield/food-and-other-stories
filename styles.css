@@ -333,7 +333,26 @@ div.story div.color-block {
 /* article view */
 
 article.blog-view {
-  margin-top: 50px;
+    margin-top: 150px;
+    text-align: ;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+article.blog-view img.banner {
+    max-height: 300px;
+    width: 100vw;
+}
+
+article.blog-view h1 {
+    background-color: antiquewhite;
+    padding: 300px;
+}
+
+div.text {
+    max-width: 800px;
 }
 
 /* footer section */
