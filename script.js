@@ -91,7 +91,7 @@ const grabContent = async function() {
       title: post.fields.title,
       keyImage: connectImage(post.fields.keyImage.sys.id, assets),
       sampleQuote: post.fields.sampleQuote,
-      blogBody: converter.makeHtml(post.fields.blogBody),
+      blogBody: converter.makeHtml(post.fields.blogBody).replace(/\n/g, "<br />"),
       color: post.fields.colour
     };
 
