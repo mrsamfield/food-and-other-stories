@@ -358,6 +358,10 @@ div.text {
     max-width: 800px;
 }
 
+div.text > * {
+    padding-bottom: 20px;
+}
+
 div.text h2.mainquote {
     color: #e6956e;
     border-left: 3px #e6956e solid;
