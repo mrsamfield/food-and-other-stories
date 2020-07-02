@@ -354,7 +354,7 @@ article.blog-view h1.title {
 }
 
 div.text {
-    max-width: 800px;
+    max-width: 750px;
     margin: 0 10px 0 10px;
     text-align: left;
 }
@@ -362,8 +362,10 @@ div.text {
 div.text img {
     width: 100%;
     object-fit: contain;
-    max-height: 500px;
     background-color: white;
+    max-height: 461px;
+    margin: 20px auto;
+}
 }
 
 div.text h2.mainquote {
