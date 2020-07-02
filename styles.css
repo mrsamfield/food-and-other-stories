@@ -334,7 +334,6 @@ div.story div.color-block {
 
 article.blog-view {
     margin: 150px 0 150px 0;
-    text-align: ;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -356,7 +355,7 @@ article.blog-view h1.title {
 
 div.text {
     max-width: 800px;
-    text-align: center;
+    text-align: left;
 }
 
 div.text img {
