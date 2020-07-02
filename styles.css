@@ -355,11 +355,15 @@ article.blog-view h1.title {
 
 div.text {
     max-width: 800px;
+    margin: 0 10px 0 10px;
     text-align: left;
 }
 
 div.text img {
-    width: 90%;
+    width: 100%;
+    object-fit: contain;
+    max-height: 500px;
+    background-color: white;
 }
 
 div.text h2.mainquote {
